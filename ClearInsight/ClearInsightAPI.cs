@@ -94,6 +94,9 @@ namespace ClearInsight
         /// <param name="callback">callback(CIResponse)</param>
         public void ImportkpiEntriesAsync(KpiEntry[] entries, Action<CIResponse> callback)
         {
+            KpiEntryValidator validator = new KpiEntryValidator();
+            validator.validate(entries.OfType<KpiEntry>().ToList());
+
             var request = new RestRequest(Method.POST);
             request.Resource = "api/v1/kpi_entry/entries";
             request.RequestFormat = DataFormat.Json;
