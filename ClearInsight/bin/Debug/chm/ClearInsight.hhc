@@ -1,0 +1,221 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML/EN">
+<HTML>
+  <BODY>
+
+<UL>
+  <LI><OBJECT type="text/sitemap">
+    <param name="Name" value="ClearInsight Namespace">
+    <param name="Local" value="html\N_ClearInsight.htm">
+  </OBJECT></LI>
+  <UL>
+    <LI><OBJECT type="text/sitemap">
+      <param name="Name" value="ClearInsightAPI Class">
+      <param name="Local" value="html\T_ClearInsight_ClearInsightAPI.htm">
+    </OBJECT></LI>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="ClearInsightAPI Members">
+        <param name="Local" value="html\AllMembers_T_ClearInsight_ClearInsightAPI.htm">
+      </OBJECT></LI>
+    </UL>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="ClearInsightAPI Constructor ">
+        <param name="Local" value="html\C_ClearInsight_ClearInsightAPI_ctor_2_6608d038.htm">
+      </OBJECT></LI>
+    </UL>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="ClearInsightAPI Methods ">
+        <param name="Local" value="html\Methods_T_ClearInsight_ClearInsightAPI.htm">
+      </OBJECT></LI>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Execute Method ">
+          <param name="Local" value="html\O_T_ClearInsight_ClearInsightAPI_Execute.htm">
+        </OBJECT></LI>
+        <UL>
+          <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Execute Method ()">
+            <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_Execute_1_ecf21ed5.htm">
+          </OBJECT></LI>
+        </UL>
+        <UL>
+          <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Execute(T) Method ()">
+            <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_Execute``1_1_ecf21ed5.htm">
+          </OBJECT></LI>
+        </UL>
+      </UL>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="ImportKpiEntries Method ">
+          <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_ImportKpiEntries_1_e87e29ac.htm">
+        </OBJECT></LI>
+      </UL>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="ImportKpiEntry Method ">
+          <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_ImportKpiEntry_1_ddfc4574.htm">
+        </OBJECT></LI>
+      </UL>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="TestSecret Method ">
+          <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_TestSecret.htm">
+        </OBJECT></LI>
+      </UL>
+    </UL>
+  </UL>
+</UL>
+<UL>
+  <LI><OBJECT type="text/sitemap">
+    <param name="Name" value="ClearInsight.Model Namespace">
+    <param name="Local" value="html\N_ClearInsight_Model.htm">
+  </OBJECT></LI>
+  <UL>
+    <LI><OBJECT type="text/sitemap">
+      <param name="Name" value="CIResponse Class">
+      <param name="Local" value="html\T_ClearInsight_Model_CIResponse.htm">
+    </OBJECT></LI>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="CIResponse Members">
+        <param name="Local" value="html\AllMembers_T_ClearInsight_Model_CIResponse.htm">
+      </OBJECT></LI>
+    </UL>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="CIResponse Constructor ">
+        <param name="Local" value="html\C_ClearInsight_Model_CIResponse_ctor.htm">
+      </OBJECT></LI>
+    </UL>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="CIResponse Methods ">
+        <param name="Local" value="html\Methods_T_ClearInsight_Model_CIResponse.htm">
+      </OBJECT></LI>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="ToString Method ">
+          <param name="Local" value="html\M_ClearInsight_Model_CIResponse_ToString.htm">
+        </OBJECT></LI>
+      </UL>
+    </UL>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="CIResponse Properties ">
+        <param name="Local" value="html\Properties_T_ClearInsight_Model_CIResponse.htm">
+      </OBJECT></LI>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Code Property ">
+          <param name="Local" value="html\P_ClearInsight_Model_CIResponse_Code.htm">
+        </OBJECT></LI>
+      </UL>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Content Property ">
+          <param name="Local" value="html\P_ClearInsight_Model_CIResponse_Content.htm">
+        </OBJECT></LI>
+      </UL>
+    </UL>
+  </UL>
+  <UL>
+    <LI><OBJECT type="text/sitemap">
+      <param name="Name" value="CIResponseCode Enumeration">
+      <param name="Local" value="html\T_ClearInsight_Model_CIResponseCode.htm">
+    </OBJECT></LI>
+  </UL>
+  <UL>
+    <LI><OBJECT type="text/sitemap">
+      <param name="Name" value="KpiEntry Class">
+      <param name="Local" value="html\T_ClearInsight_Model_KpiEntry.htm">
+    </OBJECT></LI>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="KpiEntry Members">
+        <param name="Local" value="html\AllMembers_T_ClearInsight_Model_KpiEntry.htm">
+      </OBJECT></LI>
+    </UL>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="KpiEntry Constructor ">
+        <param name="Local" value="html\C_ClearInsight_Model_KpiEntry_ctor.htm">
+      </OBJECT></LI>
+    </UL>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="KpiEntry Methods ">
+        <param name="Local" value="html\Methods_T_ClearInsight_Model_KpiEntry.htm">
+      </OBJECT></LI>
+    </UL>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="KpiEntry Properties ">
+        <param name="Local" value="html\Properties_T_ClearInsight_Model_KpiEntry.htm">
+      </OBJECT></LI>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Date Property ">
+          <param name="Local" value="html\P_ClearInsight_Model_KpiEntry_Date.htm">
+        </OBJECT></LI>
+      </UL>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Email Property ">
+          <param name="Local" value="html\P_ClearInsight_Model_KpiEntry_Email.htm">
+        </OBJECT></LI>
+      </UL>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="KpiID Property ">
+          <param name="Local" value="html\P_ClearInsight_Model_KpiEntry_KpiID.htm">
+        </OBJECT></LI>
+      </UL>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="Value Property ">
+          <param name="Local" value="html\P_ClearInsight_Model_KpiEntry_Value.htm">
+        </OBJECT></LI>
+      </UL>
+    </UL>
+  </UL>
+</UL>
+<UL>
+  <LI><OBJECT type="text/sitemap">
+    <param name="Name" value="ClearInsight.Validation Namespace">
+    <param name="Local" value="html\N_ClearInsight_Validation.htm">
+  </OBJECT></LI>
+  <UL>
+    <LI><OBJECT type="text/sitemap">
+      <param name="Name" value="KpiEntryValidator Class">
+      <param name="Local" value="html\T_ClearInsight_Validation_KpiEntryValidator.htm">
+    </OBJECT></LI>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="KpiEntryValidator Members">
+        <param name="Local" value="html\AllMembers_T_ClearInsight_Validation_KpiEntryValidator.htm">
+      </OBJECT></LI>
+    </UL>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="KpiEntryValidator Constructor ">
+        <param name="Local" value="html\C_ClearInsight_Validation_KpiEntryValidator_ctor.htm">
+      </OBJECT></LI>
+    </UL>
+    <UL>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="KpiEntryValidator Methods ">
+        <param name="Local" value="html\Methods_T_ClearInsight_Validation_KpiEntryValidator.htm">
+      </OBJECT></LI>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="validate Method ">
+          <param name="Local" value="html\M_ClearInsight_Validation_KpiEntryValidator_validate_1_c4b5cafa.htm">
+        </OBJECT></LI>
+      </UL>
+    </UL>
+  </UL>
+</UL>  </BODY>
+</HTML>

@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClearInsight</name>
+    </assembly>
+    <members>
+        <member name="T:ClearInsight.ClearInsightAPI">
+            <summary>
+            Class <c>ClierInsightAPI</c>Model for REST API
+            </summary>
+        </member>
+        <member name="F:ClearInsight.ClearInsightAPI._baseUrl">
+            <summary>
+            Instalce Variable<c>_baseUrl</c> api base url
+            </summary>
+        </member>
+        <member name="F:ClearInsight.ClearInsightAPI._accessToken">
+            <summary>
+            Instance Variable<c>_accessToken</c> access Token
+            </summary>
+        </member>
+        <member name="M:ClearInsight.ClearInsightAPI.#ctor(System.String,System.String)">
+            <summary>
+            Constructor <c>ClearInsigheAPI</c>
+            </summary>
+            <param name="baseUrl">api base url,like "www.cz-tek.com".</param>
+            <param name="accessToken">api access token.</param>
+        </member>
+        <member name="M:ClearInsight.ClearInsightAPI.Execute``1(RestSharp.RestRequest)">
+            <summary>
+            Execute RESTSharp Request
+            </summary>
+            <typeparam name="T">Delegator</typeparam>
+            <param name="request">RestSharp.RestRequest request</param>
+            <returns>Delegator</returns>
+        </member>
+        <member name="M:ClearInsight.ClearInsightAPI.Execute(RestSharp.RestRequest)">
+            <summary>
+            Execute RestSharp Request
+            </summary>
+            <param name="resquest">RestSharp.RestRequest request</param>
+            <returns>CIResponse response</returns>
+        </member>
+        <member name="M:ClearInsight.ClearInsightAPI.ExecuteAsync(RestSharp.RestRequest,System.Action{ClearInsight.Model.CIResponse})">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:ClearInsight.ClearInsightAPI.ImportKpiEntry(ClearInsight.Model.KpiEntry)">
+            <summary>
+            Upload one kpi
+            </summary>
+            <param name="entry">ClearInsight.Model.KpiEntry</param>
+            <returns>CIResponse response</returns>
+        </member>
+        <member name="M:ClearInsight.ClearInsightAPI.ImportKpiEntries(ClearInsight.Model.KpiEntry[])">
+            <summary>
+            Upload bulk kpientries
+            </summary>
+            <param name="entries">Array of ClearInsight.Model.KpiEntry</param>
+            <returns>CIResponse response</returns>
+        </member>
+        <member name="M:ClearInsight.ClearInsightAPI.TestSecret">
+            <summary>
+            A Test function
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ClearInsight.ClearInsightAPI._processStatusCode(RestSharp.IRestResponse)">
+            <summary>
+            process the server response
+            </summary>
+            <param name="response">RestSharp.IRestResponse</param>
+            <returns>CIResponse response</returns>
+        </member>
+        <member name="T:ClearInsight.Exception.CIArgumentErrorException">
+            <summary>
+            Exception<c>CIArgumentErrorException</c>
+            Argument Error Exception
+            </summary>
+        </member>
+        <member name="T:ClearInsight.Exception.ClearInsightException">
+            <summary>
+            Exception <c>ClearInsightException</c>
+            Base ClearInsight Exception
+            </summary>
+        </member>
+        <member name="M:ClearInsight.Exception.ClearInsightException.#ctor">
+            <summary>
+            ClearInsightException
+            </summary>
+        </member>
+        <member name="M:ClearInsight.Exception.ClearInsightException.#ctor(System.String)">
+            <summary>
+            ClearInsightException
+            </summary>
+            <param name="message">Error Message</param>
+        </member>
+        <member name="M:ClearInsight.Exception.ClearInsightException.#ctor(System.String,System.Exception)">
+            <summary>
+            ClearInsightException
+            </summary>
+            <param name="message">Error Message</param>
+            <param name="innerException">System Exception</param>
+        </member>
+        <member name="M:ClearInsight.Exception.CIArgumentErrorException.#ctor(System.String)">
+            <summary>
+            CIArgumentErrorException
+            </summary>
+            <param name="message">Error message</param>
+        </member>
+        <member name="M:ClearInsight.Exception.CIArgumentErrorException.#ctor(System.String,System.Exception)">
+            <summary>
+            CIArgumentErrorException
+            </summary>
+            <param name="message">Error Message</param>
+            <param name="innerException">System Exception</param>
+        </member>
+        <member name="T:ClearInsight.Exception.CIPropertyMissingException">
+            <summary>
+            Exception <c>CIPropertyMissingException</c>
+            </summary>
+        </member>
+        <member name="M:ClearInsight.Exception.CIPropertyMissingException.#ctor(System.String)">
+            <summary>
+            CIPropertyMissingException
+            </summary>
+            <param name="message">Error Message</param>
+        </member>
+        <member name="M:ClearInsight.Exception.CIPropertyMissingException.#ctor(System.String,System.Exception)">
+            <summary>
+            CIPropertyMissingException
+            </summary>
+            <param name="message">Error Message</param>
+            <param name="innerException">System Exception</param>
+        </member>
+        <member name="T:ClearInsight.Model.CIResponse">
+            <summary>
+            Class <c>CIResponse</c>
+            Model for ClearInsightAPI response
+            </summary>
+        </member>
+        <member name="M:ClearInsight.Model.CIResponse.ToString">
+            <summary>
+            Function <c>ToString</c>
+            return string with code and content
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:ClearInsight.Model.CIResponse.Code">
+            <summary>
+            Property <c>Code</c>
+            HttpStatusCode
+            </summary>
+        </member>
+        <member name="P:ClearInsight.Model.CIResponse.Content">
+            <summary>
+            Property <c>Content</c>
+            Content for error message
+            </summary>
+        </member>
+        <member name="T:ClearInsight.Model.CIResponseCode">
+            <summary>
+            Enum <c>CIResponseCode</c>
+            <remarks>Enum for response http code,for error process</remarks>
+            </summary>
+        </member>
+        <member name="F:ClearInsight.Model.CIResponseCode.ArgumentError">
+            <summary>
+            member <c>ArgumentError</c>422
+            </summary>
+        </member>
+        <member name="T:ClearInsight.Model.KpiEntry">
+            <summary>
+            Class <c>KpiEntry</c>
+            Model for Kpi Entry
+            </summary>
+        </member>
+        <member name="P:ClearInsight.Model.KpiEntry.KpiID">
+            <summary>
+            Property <c>KpiID</c>
+            id of kpi
+            <remarks>should not be empty</remarks>
+            </summary>
+        </member>
+        <member name="P:ClearInsight.Model.KpiEntry.Value">
+            <summary>
+            Property <c>Value</c>
+            value of kpi entry
+            <remarks>should not be empty</remarks>
+            </summary>
+        </member>
+        <member name="P:ClearInsight.Model.KpiEntry.Email">
+            <summary>
+            Property <c>Email</c>
+            email for entity user
+            <remarks>should not be empty.Email of who should enter the kpi entry</remarks>
+            </summary>
+        </member>
+        <member name="P:ClearInsight.Model.KpiEntry.Date">
+            <summary>
+            Property <c>Date</c>
+            date of kpi entry,
+            <remarks>should not be empty,should be UTC Time.Time if KpiEntry</remarks>
+            </summary>
+        </member>
+        <member name="T:ClearInsight.Validation.KpiEntryValidator">
+            <summary>
+            Validator <c>KpiEntryValidator</c>
+            </summary>
+        </member>
+        <member name="M:ClearInsight.Validation.KpiEntryValidator.#ctor">
+            <summary>
+            Constructor<c>KpiEntryValidator</c>
+            </summary>
+        </member>
+        <member name="M:ClearInsight.Validation.KpiEntryValidator.validate(System.Collections.Generic.List{ClearInsight.Model.KpiEntry})">
+            <summary>
+            function <c>validate</c>
+            </summary>
+            <param name="entries">List KpiEntry</param>
+        </member>
+        <member name="M:ClearInsight.Validation.KpiEntryValidator.IsIntegral(ClearInsight.Model.KpiEntry)">
+            <summary>
+            function <c>IsIntegral</c>
+            Check if all the properties of kpientry are seted
+            </summary>
+            <param name="entry">KpiEntry</param>
+            <returns>bool</returns>
+        </member>
+    </members>
+</doc>

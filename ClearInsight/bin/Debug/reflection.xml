@@ -1,0 +1,1368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<reflection xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ddue="urn:ddue-extensions">
+  <assemblies>
+    <assembly name="ClearInsight">
+      <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+      <attributes>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyDescriptionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>API wrapper for ClearInsight REST API</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyConfigurationAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value />
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyTitleAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>ClearInsight</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyCopyrightAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>Copyright ©  2014</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyFileVersionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>1.0.0.0</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyCompanyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>BrillianTech Inc.</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyProductAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>ClearInsight</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyTrademarkAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value />
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Runtime.InteropServices.ComVisibleAttribute" ref="true" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Runtime.InteropServices.GuidAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>03446e66-2ced-4650-9898-436304a0a278</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </assembly>
+  </assemblies>
+  <apis>
+    <api id="N:ClearInsight">
+      <topicdata group="api" />
+      <apidata name="ClearInsight" group="namespace" />
+      <elements>
+        <element api="T:ClearInsight.ClearInsightAPI" />
+      </elements>
+      <file name="N_ClearInsight" />
+    </api>
+    <api id="T:ClearInsight.ClearInsightAPI">
+      <topicdata group="api" allMembersTopicId="AllMembers.T:ClearInsight.ClearInsightAPI" />
+      <apidata name="ClearInsightAPI" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight" />
+      </containers>
+      <file name="T_ClearInsight_ClearInsightAPI" />
+    </api>
+    <api id="AllMembers.T:ClearInsight.ClearInsightAPI">
+      <topicdata name="ClearInsightAPI" group="list" subgroup="members" typeTopicId="T:ClearInsight.ClearInsightAPI" />
+      <apidata name="ClearInsightAPI" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:ClearInsight.ClearInsightAPI.#ctor(System.String,System.String)" />
+        <element api="Overload:ClearInsight.ClearInsightAPI.Execute">
+          <element api="M:ClearInsight.ClearInsightAPI.Execute(RestSharp.RestRequest)" />
+          <element api="M:ClearInsight.ClearInsightAPI.Execute``1(RestSharp.RestRequest)" />
+        </element>
+        <element api="M:ClearInsight.ClearInsightAPI.ImportKpiEntries(ClearInsight.Model.KpiEntry[])" />
+        <element api="M:ClearInsight.ClearInsightAPI.ImportKpiEntry(ClearInsight.Model.KpiEntry)" />
+        <element api="M:ClearInsight.ClearInsightAPI.TestSecret" />
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight" />
+      </containers>
+      <file name="AllMembers_T_ClearInsight_ClearInsightAPI" />
+    </api>
+    <api id="Methods.T:ClearInsight.ClearInsightAPI">
+      <topicdata name="ClearInsightAPI" group="list" subgroup="Methods" typeTopicId="T:ClearInsight.ClearInsightAPI" />
+      <apidata name="ClearInsightAPI" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="Overload:ClearInsight.ClearInsightAPI.Execute">
+          <element api="M:ClearInsight.ClearInsightAPI.Execute(RestSharp.RestRequest)" />
+          <element api="M:ClearInsight.ClearInsightAPI.Execute``1(RestSharp.RestRequest)" />
+        </element>
+        <element api="M:ClearInsight.ClearInsightAPI.ImportKpiEntries(ClearInsight.Model.KpiEntry[])" />
+        <element api="M:ClearInsight.ClearInsightAPI.ImportKpiEntry(ClearInsight.Model.KpiEntry)" />
+        <element api="M:ClearInsight.ClearInsightAPI.TestSecret" />
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight" />
+      </containers>
+      <file name="Methods_T_ClearInsight_ClearInsightAPI" />
+    </api>
+    <api id="Overload:ClearInsight.ClearInsightAPI.Execute">
+      <topicdata name="Execute" group="list" subgroup="overload" memberSubgroup="method" pseudo="true" allMembersTopicId="AllMembers.T:ClearInsight.ClearInsightAPI" />
+      <apidata name="Execute" group="member" subgroup="method" />
+      <elements>
+        <element api="M:ClearInsight.ClearInsightAPI.Execute(RestSharp.RestRequest)" />
+        <element api="M:ClearInsight.ClearInsightAPI.Execute``1(RestSharp.RestRequest)" />
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight" />
+        <type api="T:ClearInsight.ClearInsightAPI" ref="true" />
+      </containers>
+      <file name="O_T_ClearInsight_ClearInsightAPI_Execute" />
+    </api>
+    <api id="M:ClearInsight.ClearInsightAPI.#ctor(System.String,System.String)">
+      <topicdata group="api" />
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <parameters>
+        <parameter name="baseUrl">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="accessToken">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight" />
+        <type api="T:ClearInsight.ClearInsightAPI" ref="true" />
+      </containers>
+      <file name="C_ClearInsight_ClearInsightAPI_ctor_2_6608d038" />
+    </api>
+    <api id="M:ClearInsight.ClearInsightAPI.Execute(RestSharp.RestRequest)">
+      <topicdata group="api" />
+      <apidata name="Execute" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:ClearInsight.ClearInsightAPI.Execute" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="resquest">
+          <type api="T:RestSharp.RestRequest" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:ClearInsight.Model.CIResponse" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight" />
+        <type api="T:ClearInsight.ClearInsightAPI" ref="true" />
+      </containers>
+      <file name="M_ClearInsight_ClearInsightAPI_Execute_1_ecf21ed5" />
+    </api>
+    <api id="M:ClearInsight.ClearInsightAPI.Execute``1(RestSharp.RestRequest)">
+      <topicdata group="api" />
+      <apidata name="Execute" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:ClearInsight.ClearInsightAPI.Execute" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T">
+          <constrained ctor="true" />
+        </template>
+      </templates>
+      <parameters>
+        <parameter name="request">
+          <type api="T:RestSharp.RestRequest" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <template name="T" index="0" api="M:ClearInsight.ClearInsightAPI.Execute``1(RestSharp.RestRequest)" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight" />
+        <type api="T:ClearInsight.ClearInsightAPI" ref="true" />
+      </containers>
+      <file name="M_ClearInsight_ClearInsightAPI_Execute``1_1_ecf21ed5" />
+    </api>
+    <api id="M:ClearInsight.ClearInsightAPI.ImportKpiEntries(ClearInsight.Model.KpiEntry[])">
+      <topicdata group="api" />
+      <apidata name="ImportKpiEntries" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="entries">
+          <arrayOf rank="1">
+            <type api="T:ClearInsight.Model.KpiEntry" ref="true" />
+          </arrayOf>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:ClearInsight.Model.CIResponse" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight" />
+        <type api="T:ClearInsight.ClearInsightAPI" ref="true" />
+      </containers>
+      <file name="M_ClearInsight_ClearInsightAPI_ImportKpiEntries_1_e87e29ac" />
+    </api>
+    <api id="M:ClearInsight.ClearInsightAPI.ImportKpiEntry(ClearInsight.Model.KpiEntry)">
+      <topicdata group="api" />
+      <apidata name="ImportKpiEntry" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="entry">
+          <type api="T:ClearInsight.Model.KpiEntry" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:ClearInsight.Model.CIResponse" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight" />
+        <type api="T:ClearInsight.ClearInsightAPI" ref="true" />
+      </containers>
+      <file name="M_ClearInsight_ClearInsightAPI_ImportKpiEntry_1_ddfc4574" />
+    </api>
+    <api id="M:ClearInsight.ClearInsightAPI.TestSecret">
+      <topicdata group="api" />
+      <apidata name="TestSecret" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <returns>
+        <type api="T:ClearInsight.Model.CIResponse" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight" />
+        <type api="T:ClearInsight.ClearInsightAPI" ref="true" />
+      </containers>
+      <file name="M_ClearInsight_ClearInsightAPI_TestSecret" />
+    </api>
+    <api id="N:ClearInsight.Model">
+      <topicdata group="api" />
+      <apidata name="ClearInsight.Model" group="namespace" />
+      <elements>
+        <element api="T:ClearInsight.Model.CIResponse" />
+        <element api="T:ClearInsight.Model.CIResponseCode" />
+        <element api="T:ClearInsight.Model.KpiEntry" />
+      </elements>
+      <file name="N_ClearInsight_Model" />
+    </api>
+    <api id="T:ClearInsight.Model.CIResponse">
+      <topicdata group="api" allMembersTopicId="AllMembers.T:ClearInsight.Model.CIResponse" />
+      <apidata name="CIResponse" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+      </containers>
+      <file name="T_ClearInsight_Model_CIResponse" />
+    </api>
+    <api id="AllMembers.T:ClearInsight.Model.CIResponse">
+      <topicdata name="CIResponse" group="list" subgroup="members" typeTopicId="T:ClearInsight.Model.CIResponse" />
+      <apidata name="CIResponse" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:ClearInsight.Model.CIResponse.#ctor" />
+        <element api="P:ClearInsight.Model.CIResponse.Code" />
+        <element api="P:ClearInsight.Model.CIResponse.Content" />
+        <element api="M:ClearInsight.Model.CIResponse.ToString" />
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+      </containers>
+      <file name="AllMembers_T_ClearInsight_Model_CIResponse" />
+    </api>
+    <api id="Methods.T:ClearInsight.Model.CIResponse">
+      <topicdata name="CIResponse" group="list" subgroup="Methods" typeTopicId="T:ClearInsight.Model.CIResponse" />
+      <apidata name="CIResponse" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:ClearInsight.Model.CIResponse.ToString" />
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+      </containers>
+      <file name="Methods_T_ClearInsight_Model_CIResponse" />
+    </api>
+    <api id="Properties.T:ClearInsight.Model.CIResponse">
+      <topicdata name="CIResponse" group="list" subgroup="Properties" typeTopicId="T:ClearInsight.Model.CIResponse" />
+      <apidata name="CIResponse" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="P:ClearInsight.Model.CIResponse.Code" />
+        <element api="P:ClearInsight.Model.CIResponse.Content" />
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+      </containers>
+      <file name="Properties_T_ClearInsight_Model_CIResponse" />
+    </api>
+    <api id="M:ClearInsight.Model.CIResponse.#ctor">
+      <topicdata group="api" />
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+        <type api="T:ClearInsight.Model.CIResponse" ref="true" />
+      </containers>
+      <file name="C_ClearInsight_Model_CIResponse_ctor" />
+    </api>
+    <api id="P:ClearInsight.Model.CIResponse.Code">
+      <topicdata group="api" />
+      <apidata name="Code" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Code" />
+      <setter name="set_Code" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+        <type api="T:ClearInsight.Model.CIResponse" ref="true" />
+      </containers>
+      <file name="P_ClearInsight_Model_CIResponse_Code" />
+    </api>
+    <api id="P:ClearInsight.Model.CIResponse.Content">
+      <topicdata group="api" />
+      <apidata name="Content" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Content" />
+      <setter name="set_Content" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+        <type api="T:ClearInsight.Model.CIResponse" ref="true" />
+      </containers>
+      <file name="P_ClearInsight_Model_CIResponse_Content" />
+    </api>
+    <api id="M:ClearInsight.Model.CIResponse.ToString">
+      <topicdata group="api" />
+      <apidata name="ToString" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="true" />
+      <overrides>
+        <member api="M:System.Object.ToString">
+          <type api="T:System.Object" ref="true" />
+        </member>
+      </overrides>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+        <type api="T:ClearInsight.Model.CIResponse" ref="true" />
+      </containers>
+      <file name="M_ClearInsight_Model_CIResponse_ToString" />
+    </api>
+    <api id="T:ClearInsight.Model.CIResponseCode">
+      <topicdata group="api" />
+      <apidata name="CIResponseCode" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="F:ClearInsight.Model.CIResponseCode.ArgumentError" />
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+      </containers>
+      <file name="T_ClearInsight_Model_CIResponseCode" />
+    </api>
+    <api id="F:ClearInsight.Model.CIResponseCode.ArgumentError">
+      <topicdata group="api" notopic="" />
+      <apidata name="ArgumentError" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ClearInsight.Model.CIResponseCode" ref="false" />
+      </returns>
+      <value>422</value>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+        <type api="T:ClearInsight.Model.CIResponseCode" ref="false" />
+      </containers>
+      <file name="F_ClearInsight_Model_CIResponseCode_ArgumentError" />
+    </api>
+    <api id="T:ClearInsight.Model.KpiEntry">
+      <topicdata group="api" allMembersTopicId="AllMembers.T:ClearInsight.Model.KpiEntry" />
+      <apidata name="KpiEntry" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+      </containers>
+      <file name="T_ClearInsight_Model_KpiEntry" />
+    </api>
+    <api id="AllMembers.T:ClearInsight.Model.KpiEntry">
+      <topicdata name="KpiEntry" group="list" subgroup="members" typeTopicId="T:ClearInsight.Model.KpiEntry" />
+      <apidata name="KpiEntry" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:ClearInsight.Model.KpiEntry.#ctor" />
+        <element api="P:ClearInsight.Model.KpiEntry.Date" />
+        <element api="P:ClearInsight.Model.KpiEntry.Email" />
+        <element api="P:ClearInsight.Model.KpiEntry.KpiID" />
+        <element api="P:ClearInsight.Model.KpiEntry.Value" />
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+      </containers>
+      <file name="AllMembers_T_ClearInsight_Model_KpiEntry" />
+    </api>
+    <api id="Methods.T:ClearInsight.Model.KpiEntry">
+      <topicdata name="KpiEntry" group="list" subgroup="Methods" typeTopicId="T:ClearInsight.Model.KpiEntry" />
+      <apidata name="KpiEntry" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+      </containers>
+      <file name="Methods_T_ClearInsight_Model_KpiEntry" />
+    </api>
+    <api id="Properties.T:ClearInsight.Model.KpiEntry">
+      <topicdata name="KpiEntry" group="list" subgroup="Properties" typeTopicId="T:ClearInsight.Model.KpiEntry" />
+      <apidata name="KpiEntry" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="P:ClearInsight.Model.KpiEntry.Date" />
+        <element api="P:ClearInsight.Model.KpiEntry.Email" />
+        <element api="P:ClearInsight.Model.KpiEntry.KpiID" />
+        <element api="P:ClearInsight.Model.KpiEntry.Value" />
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+      </containers>
+      <file name="Properties_T_ClearInsight_Model_KpiEntry" />
+    </api>
+    <api id="M:ClearInsight.Model.KpiEntry.#ctor">
+      <topicdata group="api" />
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+        <type api="T:ClearInsight.Model.KpiEntry" ref="true" />
+      </containers>
+      <file name="C_ClearInsight_Model_KpiEntry_ctor" />
+    </api>
+    <api id="P:ClearInsight.Model.KpiEntry.Date">
+      <topicdata group="api" />
+      <apidata name="Date" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Date" />
+      <setter name="set_Date" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+        <type api="T:ClearInsight.Model.KpiEntry" ref="true" />
+      </containers>
+      <file name="P_ClearInsight_Model_KpiEntry_Date" />
+    </api>
+    <api id="P:ClearInsight.Model.KpiEntry.Email">
+      <topicdata group="api" />
+      <apidata name="Email" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Email" />
+      <setter name="set_Email" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+        <type api="T:ClearInsight.Model.KpiEntry" ref="true" />
+      </containers>
+      <file name="P_ClearInsight_Model_KpiEntry_Email" />
+    </api>
+    <api id="P:ClearInsight.Model.KpiEntry.KpiID">
+      <topicdata group="api" />
+      <apidata name="KpiID" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_KpiID" />
+      <setter name="set_KpiID" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+        <type api="T:ClearInsight.Model.KpiEntry" ref="true" />
+      </containers>
+      <file name="P_ClearInsight_Model_KpiEntry_KpiID" />
+    </api>
+    <api id="P:ClearInsight.Model.KpiEntry.Value">
+      <topicdata group="api" />
+      <apidata name="Value" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Value" />
+      <setter name="set_Value" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Model" />
+        <type api="T:ClearInsight.Model.KpiEntry" ref="true" />
+      </containers>
+      <file name="P_ClearInsight_Model_KpiEntry_Value" />
+    </api>
+    <api id="N:ClearInsight.Validation">
+      <topicdata group="api" />
+      <apidata name="ClearInsight.Validation" group="namespace" />
+      <elements>
+        <element api="T:ClearInsight.Validation.KpiEntryValidator" />
+      </elements>
+      <file name="N_ClearInsight_Validation" />
+    </api>
+    <api id="T:ClearInsight.Validation.KpiEntryValidator">
+      <topicdata group="api" allMembersTopicId="AllMembers.T:ClearInsight.Validation.KpiEntryValidator" />
+      <apidata name="KpiEntryValidator" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Validation" />
+      </containers>
+      <file name="T_ClearInsight_Validation_KpiEntryValidator" />
+    </api>
+    <api id="AllMembers.T:ClearInsight.Validation.KpiEntryValidator">
+      <topicdata name="KpiEntryValidator" group="list" subgroup="members" typeTopicId="T:ClearInsight.Validation.KpiEntryValidator" />
+      <apidata name="KpiEntryValidator" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:ClearInsight.Validation.KpiEntryValidator.#ctor" />
+        <element api="M:ClearInsight.Validation.KpiEntryValidator.validate(System.Collections.Generic.List{ClearInsight.Model.KpiEntry})" />
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Validation" />
+      </containers>
+      <file name="AllMembers_T_ClearInsight_Validation_KpiEntryValidator" />
+    </api>
+    <api id="Methods.T:ClearInsight.Validation.KpiEntryValidator">
+      <topicdata name="KpiEntryValidator" group="list" subgroup="Methods" typeTopicId="T:ClearInsight.Validation.KpiEntryValidator" />
+      <apidata name="KpiEntryValidator" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:ClearInsight.Validation.KpiEntryValidator.validate(System.Collections.Generic.List{ClearInsight.Model.KpiEntry})" />
+      </elements>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+        </library>
+        <namespace api="N:ClearInsight.Validation" />
+      </containers>
+      <file name="Methods_T_ClearInsight_Validation_KpiEntryValidator" />
+    </api>
+    <api id="M:ClearInsight.Validation.KpiEntryValidator.#ctor">
+      <topicdata group="api" />
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Validation" />
+        <type api="T:ClearInsight.Validation.KpiEntryValidator" ref="true" />
+      </containers>
+      <file name="C_ClearInsight_Validation_KpiEntryValidator_ctor" />
+    </api>
+    <api id="M:ClearInsight.Validation.KpiEntryValidator.validate(System.Collections.Generic.List{ClearInsight.Model.KpiEntry})">
+      <topicdata group="api" />
+      <apidata name="validate" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="entries">
+          <type api="T:System.Collections.Generic.List`1" ref="true">
+            <specialization>
+              <type api="T:ClearInsight.Model.KpiEntry" ref="true" />
+            </specialization>
+          </type>
+        </parameter>
+      </parameters>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+          <noAptca />
+        </library>
+        <namespace api="N:ClearInsight.Validation" />
+        <type api="T:ClearInsight.Validation.KpiEntryValidator" ref="true" />
+      </containers>
+      <file name="M_ClearInsight_Validation_KpiEntryValidator_validate_1_c4b5cafa" />
+    </api>
+  </apis>
+</reflection>

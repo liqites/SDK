@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HelpTOC SYSTEM "MS-Help://Hx/Resources/HelpTOC.dtd">
+<HelpTOC DTDVersion="1.0">
+  <HelpTOCNode Url="html\N_ClearInsight.htm">
+    <HelpTOCNode Url="html\T_ClearInsight_ClearInsightAPI.htm">
+      <HelpTOCNode Url="html\AllMembers_T_ClearInsight_ClearInsightAPI.htm" />
+      <HelpTOCNode Url="html\C_ClearInsight_ClearInsightAPI_ctor_2_6608d038.htm" />
+      <HelpTOCNode Url="html\Methods_T_ClearInsight_ClearInsightAPI.htm">
+        <HelpTOCNode Url="html\O_T_ClearInsight_ClearInsightAPI_Execute.htm">
+          <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_Execute_1_ecf21ed5.htm" />
+          <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_Execute``1_1_ecf21ed5.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_ImportKpiEntries_1_e87e29ac.htm" />
+        <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_ImportKpiEntry_1_ddfc4574.htm" />
+        <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_TestSecret.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Url="html\N_ClearInsight_Model.htm">
+    <HelpTOCNode Url="html\T_ClearInsight_Model_CIResponse.htm">
+      <HelpTOCNode Url="html\AllMembers_T_ClearInsight_Model_CIResponse.htm" />
+      <HelpTOCNode Url="html\C_ClearInsight_Model_CIResponse_ctor.htm" />
+      <HelpTOCNode Url="html\Methods_T_ClearInsight_Model_CIResponse.htm">
+        <HelpTOCNode Url="html\M_ClearInsight_Model_CIResponse_ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Url="html\Properties_T_ClearInsight_Model_CIResponse.htm">
+        <HelpTOCNode Url="html\P_ClearInsight_Model_CIResponse_Code.htm" />
+        <HelpTOCNode Url="html\P_ClearInsight_Model_CIResponse_Content.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Url="html\T_ClearInsight_Model_CIResponseCode.htm" />
+    <HelpTOCNode Url="html\T_ClearInsight_Model_KpiEntry.htm">
+      <HelpTOCNode Url="html\AllMembers_T_ClearInsight_Model_KpiEntry.htm" />
+      <HelpTOCNode Url="html\C_ClearInsight_Model_KpiEntry_ctor.htm" />
+      <HelpTOCNode Url="html\Methods_T_ClearInsight_Model_KpiEntry.htm" />
+      <HelpTOCNode Url="html\Properties_T_ClearInsight_Model_KpiEntry.htm">
+        <HelpTOCNode Url="html\P_ClearInsight_Model_KpiEntry_Date.htm" />
+        <HelpTOCNode Url="html\P_ClearInsight_Model_KpiEntry_Email.htm" />
+        <HelpTOCNode Url="html\P_ClearInsight_Model_KpiEntry_KpiID.htm" />
+        <HelpTOCNode Url="html\P_ClearInsight_Model_KpiEntry_Value.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Url="html\N_ClearInsight_Validation.htm">
+    <HelpTOCNode Url="html\T_ClearInsight_Validation_KpiEntryValidator.htm">
+      <HelpTOCNode Url="html\AllMembers_T_ClearInsight_Validation_KpiEntryValidator.htm" />
+      <HelpTOCNode Url="html\C_ClearInsight_Validation_KpiEntryValidator_ctor.htm" />
+      <HelpTOCNode Url="html\Methods_T_ClearInsight_Validation_KpiEntryValidator.htm">
+        <HelpTOCNode Url="html\M_ClearInsight_Validation_KpiEntryValidator_validate_1_c4b5cafa.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

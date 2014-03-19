@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topics>
+  <topic id="N:ClearInsight" project="_Namespaces" file="N_ClearInsight">
+    <topic id="T:ClearInsight.ClearInsightAPI" project="ClearInsight" file="T_ClearInsight_ClearInsightAPI">
+      <topic id="AllMembers.T:ClearInsight.ClearInsightAPI" project="ClearInsight" file="AllMembers_T_ClearInsight_ClearInsightAPI" />
+      <topic id="M:ClearInsight.ClearInsightAPI.#ctor(System.String,System.String)" project="ClearInsight" file="C_ClearInsight_ClearInsightAPI_ctor_2_6608d038" />
+      <topic id="Methods.T:ClearInsight.ClearInsightAPI" project="ClearInsight" file="Methods_T_ClearInsight_ClearInsightAPI">
+        <topic id="Overload:ClearInsight.ClearInsightAPI.Execute" project="ClearInsight" file="O_T_ClearInsight_ClearInsightAPI_Execute">
+          <topic id="M:ClearInsight.ClearInsightAPI.Execute(RestSharp.RestRequest)" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_Execute_1_ecf21ed5" />
+          <topic id="M:ClearInsight.ClearInsightAPI.Execute``1(RestSharp.RestRequest)" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_Execute``1_1_ecf21ed5" />
+        </topic>
+        <topic id="M:ClearInsight.ClearInsightAPI.ImportKpiEntries(ClearInsight.Model.KpiEntry[])" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_ImportKpiEntries_1_e87e29ac" />
+        <topic id="M:ClearInsight.ClearInsightAPI.ImportKpiEntry(ClearInsight.Model.KpiEntry)" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_ImportKpiEntry_1_ddfc4574" />
+        <topic id="M:ClearInsight.ClearInsightAPI.TestSecret" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_TestSecret" />
+      </topic>
+    </topic>
+  </topic>
+  <topic id="N:ClearInsight.Model" project="_Namespaces" file="N_ClearInsight_Model">
+    <topic id="T:ClearInsight.Model.CIResponse" project="ClearInsight" file="T_ClearInsight_Model_CIResponse">
+      <topic id="AllMembers.T:ClearInsight.Model.CIResponse" project="ClearInsight" file="AllMembers_T_ClearInsight_Model_CIResponse" />
+      <topic id="M:ClearInsight.Model.CIResponse.#ctor" project="ClearInsight" file="C_ClearInsight_Model_CIResponse_ctor" />
+      <topic id="Methods.T:ClearInsight.Model.CIResponse" project="ClearInsight" file="Methods_T_ClearInsight_Model_CIResponse">
+        <topic id="M:ClearInsight.Model.CIResponse.ToString" project="ClearInsight" file="M_ClearInsight_Model_CIResponse_ToString" />
+      </topic>
+      <topic id="Properties.T:ClearInsight.Model.CIResponse" project="ClearInsight" file="Properties_T_ClearInsight_Model_CIResponse">
+        <topic id="P:ClearInsight.Model.CIResponse.Code" project="ClearInsight" file="P_ClearInsight_Model_CIResponse_Code" />
+        <topic id="P:ClearInsight.Model.CIResponse.Content" project="ClearInsight" file="P_ClearInsight_Model_CIResponse_Content" />
+      </topic>
+    </topic>
+    <topic id="T:ClearInsight.Model.CIResponseCode" project="ClearInsight" file="T_ClearInsight_Model_CIResponseCode" />
+    <topic id="T:ClearInsight.Model.KpiEntry" project="ClearInsight" file="T_ClearInsight_Model_KpiEntry">
+      <topic id="AllMembers.T:ClearInsight.Model.KpiEntry" project="ClearInsight" file="AllMembers_T_ClearInsight_Model_KpiEntry" />
+      <topic id="M:ClearInsight.Model.KpiEntry.#ctor" project="ClearInsight" file="C_ClearInsight_Model_KpiEntry_ctor" />
+      <topic id="Methods.T:ClearInsight.Model.KpiEntry" project="ClearInsight" file="Methods_T_ClearInsight_Model_KpiEntry" />
+      <topic id="Properties.T:ClearInsight.Model.KpiEntry" project="ClearInsight" file="Properties_T_ClearInsight_Model_KpiEntry">
+        <topic id="P:ClearInsight.Model.KpiEntry.Date" project="ClearInsight" file="P_ClearInsight_Model_KpiEntry_Date" />
+        <topic id="P:ClearInsight.Model.KpiEntry.Email" project="ClearInsight" file="P_ClearInsight_Model_KpiEntry_Email" />
+        <topic id="P:ClearInsight.Model.KpiEntry.KpiID" project="ClearInsight" file="P_ClearInsight_Model_KpiEntry_KpiID" />
+        <topic id="P:ClearInsight.Model.KpiEntry.Value" project="ClearInsight" file="P_ClearInsight_Model_KpiEntry_Value" />
+      </topic>
+    </topic>
+  </topic>
+  <topic id="N:ClearInsight.Validation" project="_Namespaces" file="N_ClearInsight_Validation">
+    <topic id="T:ClearInsight.Validation.KpiEntryValidator" project="ClearInsight" file="T_ClearInsight_Validation_KpiEntryValidator">
+      <topic id="AllMembers.T:ClearInsight.Validation.KpiEntryValidator" project="ClearInsight" file="AllMembers_T_ClearInsight_Validation_KpiEntryValidator" />
+      <topic id="M:ClearInsight.Validation.KpiEntryValidator.#ctor" project="ClearInsight" file="C_ClearInsight_Validation_KpiEntryValidator_ctor" />
+      <topic id="Methods.T:ClearInsight.Validation.KpiEntryValidator" project="ClearInsight" file="Methods_T_ClearInsight_Validation_KpiEntryValidator">
+        <topic id="M:ClearInsight.Validation.KpiEntryValidator.validate(System.Collections.Generic.List{ClearInsight.Model.KpiEntry})" project="ClearInsight" file="M_ClearInsight_Validation_KpiEntryValidator_validate_1_c4b5cafa" />
+      </topic>
+    </topic>
+  </topic>
+</topics>
