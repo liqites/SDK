@@ -41,6 +41,21 @@
             <param name="resquest">RestSharp.RestRequest request</param>
             <returns>CIResponse response</returns>
         </member>
+        <member name="M:ClearInsight.ClearInsightAPI.ExecuteAsync(RestSharp.RestRequest,System.Action{ClearInsight.Model.CIResponse})">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:ClearInsight.ClearInsightAPI.ImportkpiEntriesAsync(ClearInsight.Model.KpiEntry[],System.Action{ClearInsight.Model.CIResponse})">
+            <summary>
+            function ImportkpiEntriesAsync
+            </summary>
+            <param name="entries">array kpientries</param>
+            <remarks>length of entries should not bigger than 500</remarks>
+            <param name="callback">callback(CIResponse)</param>
+        </member>
         <member name="M:ClearInsight.ClearInsightAPI.ImportKpiEntry(ClearInsight.Model.KpiEntry)">
             <summary>
             Upload one kpi
@@ -53,6 +68,7 @@
             Upload bulk kpientries
             </summary>
             <param name="entries">Array of ClearInsight.Model.KpiEntry</param>
+            <remarks>length of entries should not bigger than 500</remarks>
             <returns>CIResponse response</returns>
         </member>
         <member name="M:ClearInsight.ClearInsightAPI.TestSecret">
@@ -158,6 +174,11 @@
             <summary>
             Enum <c>CIResponseCode</c>
             <remarks>Enum for response http code,for error process</remarks>
+            </summary>
+        </member>
+        <member name="F:ClearInsight.Model.CIResponseCode.Unauthorized">
+            <summary>
+            member <c>Unauthorized</c>
             </summary>
         </member>
         <member name="F:ClearInsight.Model.CIResponseCode.ArgumentError">

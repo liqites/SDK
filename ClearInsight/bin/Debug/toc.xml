@@ -9,7 +9,9 @@
           <topic id="M:ClearInsight.ClearInsightAPI.Execute(RestSharp.RestRequest)" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_Execute_1_ecf21ed5" />
           <topic id="M:ClearInsight.ClearInsightAPI.Execute``1(RestSharp.RestRequest)" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_Execute``1_1_ecf21ed5" />
         </topic>
+        <topic id="M:ClearInsight.ClearInsightAPI.ExecuteAsync(RestSharp.RestRequest,System.Action{ClearInsight.Model.CIResponse})" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_ExecuteAsync_2_7164dae0" />
         <topic id="M:ClearInsight.ClearInsightAPI.ImportKpiEntries(ClearInsight.Model.KpiEntry[])" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_ImportKpiEntries_1_e87e29ac" />
+        <topic id="M:ClearInsight.ClearInsightAPI.ImportkpiEntriesAsync(ClearInsight.Model.KpiEntry[],System.Action{ClearInsight.Model.CIResponse})" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_ImportkpiEntriesAsync_2_d144f1fe" />
         <topic id="M:ClearInsight.ClearInsightAPI.ImportKpiEntry(ClearInsight.Model.KpiEntry)" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_ImportKpiEntry_1_ddfc4574" />
         <topic id="M:ClearInsight.ClearInsightAPI.TestSecret" project="ClearInsight" file="M_ClearInsight_ClearInsightAPI_TestSecret" />
       </topic>

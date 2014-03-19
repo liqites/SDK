@@ -10,7 +10,9 @@
           <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_Execute_1_ecf21ed5.htm" />
           <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_Execute``1_1_ecf21ed5.htm" />
         </HelpTOCNode>
+        <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_ExecuteAsync_2_7164dae0.htm" />
         <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_ImportKpiEntries_1_e87e29ac.htm" />
+        <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_ImportkpiEntriesAsync_2_d144f1fe.htm" />
         <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_ImportKpiEntry_1_ddfc4574.htm" />
         <HelpTOCNode Url="html\M_ClearInsight_ClearInsightAPI_TestSecret.htm" />
       </HelpTOCNode>

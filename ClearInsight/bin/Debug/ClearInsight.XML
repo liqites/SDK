@@ -176,6 +176,11 @@
             <remarks>Enum for response http code,for error process</remarks>
             </summary>
         </member>
+        <member name="F:ClearInsight.Model.CIResponseCode.Unauthorized">
+            <summary>
+            member <c>Unauthorized</c>
+            </summary>
+        </member>
         <member name="F:ClearInsight.Model.CIResponseCode.ArgumentError">
             <summary>
             member <c>ArgumentError</c>422

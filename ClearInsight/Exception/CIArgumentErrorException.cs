@@ -6,7 +6,7 @@ using System.Text;
 namespace ClearInsight.Exception
 {
     /// <summary>
-    /// Exception<c>CIArgumentErrorException</c>
+    /// Class<c>CIArgumentErrorException</c>
     /// Argument Error Exception
     /// </summary>
     class CIArgumentErrorException : ClearInsightException

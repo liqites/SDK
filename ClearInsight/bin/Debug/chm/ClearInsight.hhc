@@ -49,8 +49,20 @@
       </UL>
       <UL>
         <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="ExecuteAsync Method ">
+          <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_ExecuteAsync_2_7164dae0.htm">
+        </OBJECT></LI>
+      </UL>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
           <param name="Name" value="ImportKpiEntries Method ">
           <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_ImportKpiEntries_1_e87e29ac.htm">
+        </OBJECT></LI>
+      </UL>
+      <UL>
+        <LI><OBJECT type="text/sitemap">
+          <param name="Name" value="ImportkpiEntriesAsync Method ">
+          <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_ImportkpiEntriesAsync_2_d144f1fe.htm">
         </OBJECT></LI>
       </UL>
       <UL>

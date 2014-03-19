@@ -12,6 +12,10 @@ namespace ClearInsight.Model
     public enum CIResponseCode
     {
         /// <summary>
+        /// member <c>Unauthorized</c>
+        /// </summary>
+        Unauthorized = 401,
+        /// <summary>
         /// member <c>ArgumentError</c>422
         /// </summary>
         ArgumentError=422,

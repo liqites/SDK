@@ -12,10 +12,10 @@
           </argument>
         </attribute>
         <attribute>
-          <type api="T:System.Reflection.AssemblyConfigurationAttribute" ref="true" />
+          <type api="T:System.Reflection.AssemblyFileVersionAttribute" ref="true" />
           <argument>
             <type api="T:System.String" ref="true" />
-            <value />
+            <value>1.0.0.0</value>
           </argument>
         </attribute>
         <attribute>
@@ -26,17 +26,10 @@
           </argument>
         </attribute>
         <attribute>
-          <type api="T:System.Reflection.AssemblyCopyrightAttribute" ref="true" />
+          <type api="T:System.Reflection.AssemblyConfigurationAttribute" ref="true" />
           <argument>
             <type api="T:System.String" ref="true" />
-            <value>Copyright ©  2014</value>
-          </argument>
-        </attribute>
-        <attribute>
-          <type api="T:System.Reflection.AssemblyFileVersionAttribute" ref="true" />
-          <argument>
-            <type api="T:System.String" ref="true" />
-            <value>1.0.0.0</value>
+            <value />
           </argument>
         </attribute>
         <attribute>
@@ -51,6 +44,13 @@
           <argument>
             <type api="T:System.String" ref="true" />
             <value>ClearInsight</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyCopyrightAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>Copyright ©  2014</value>
           </argument>
         </attribute>
         <attribute>
@@ -96,6 +96,8 @@
         <element api="M:ClearInsight.ClearInsightAPI.#ctor(System.String,System.String)" />
         <element api="M:ClearInsight.ClearInsightAPI.Execute``1(RestSharp.RestRequest)" />
         <element api="M:ClearInsight.ClearInsightAPI.Execute(RestSharp.RestRequest)" />
+        <element api="M:ClearInsight.ClearInsightAPI.ExecuteAsync(RestSharp.RestRequest,System.Action{ClearInsight.Model.CIResponse})" />
+        <element api="M:ClearInsight.ClearInsightAPI.ImportkpiEntriesAsync(ClearInsight.Model.KpiEntry[],System.Action{ClearInsight.Model.CIResponse})" />
         <element api="M:ClearInsight.ClearInsightAPI.ImportKpiEntry(ClearInsight.Model.KpiEntry)" />
         <element api="M:ClearInsight.ClearInsightAPI.ImportKpiEntries(ClearInsight.Model.KpiEntry[])" />
         <element api="M:ClearInsight.ClearInsightAPI.TestSecret" />
@@ -243,6 +245,28 @@
         <type api="T:ClearInsight.ClearInsightAPI" ref="true" />
       </containers>
     </api>
+    <api id="M:ClearInsight.ClearInsightAPI.ExecuteAsync(RestSharp.RestRequest,System.Action{ClearInsight.Model.CIResponse})">
+      <apidata name="ExecuteAsync" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="request">
+          <type api="T:RestSharp.RestRequest" ref="true" />
+        </parameter>
+        <parameter name="callback">
+          <type api="T:System.Action`1" ref="true">
+            <specialization>
+              <type api="T:ClearInsight.Model.CIResponse" ref="true" />
+            </specialization>
+          </type>
+        </parameter>
+      </parameters>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ClearInsight" />
+        <type api="T:ClearInsight.ClearInsightAPI" ref="true" />
+      </containers>
+    </api>
     <api id="M:ClearInsight.ClearInsightAPI.ImportKpiEntries(ClearInsight.Model.KpiEntry[])">
       <apidata name="ImportKpiEntries" group="member" subgroup="method" />
       <memberdata visibility="public" />
@@ -257,6 +281,30 @@
       <returns>
         <type api="T:ClearInsight.Model.CIResponse" ref="true" />
       </returns>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ClearInsight" />
+        <type api="T:ClearInsight.ClearInsightAPI" ref="true" />
+      </containers>
+    </api>
+    <api id="M:ClearInsight.ClearInsightAPI.ImportkpiEntriesAsync(ClearInsight.Model.KpiEntry[],System.Action{ClearInsight.Model.CIResponse})">
+      <apidata name="ImportkpiEntriesAsync" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="entries">
+          <arrayOf rank="1">
+            <type api="T:ClearInsight.Model.KpiEntry" ref="true" />
+          </arrayOf>
+        </parameter>
+        <parameter name="callback">
+          <type api="T:System.Action`1" ref="true">
+            <specialization>
+              <type api="T:ClearInsight.Model.CIResponse" ref="true" />
+            </specialization>
+          </type>
+        </parameter>
+      </parameters>
       <containers>
         <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary" />
         <namespace api="N:ClearInsight" />
@@ -451,6 +499,7 @@
       <apidata name="CIResponseCode" group="type" subgroup="enumeration" />
       <typedata visibility="public" sealed="true" serializable="false" layout="auto" format="ansi" />
       <elements>
+        <element api="F:ClearInsight.Model.CIResponseCode.Unauthorized" />
         <element api="F:ClearInsight.Model.CIResponseCode.ArgumentError" />
       </elements>
       <containers>
@@ -466,6 +515,20 @@
         <type api="T:ClearInsight.Model.CIResponseCode" ref="false" />
       </returns>
       <value>422</value>
+      <containers>
+        <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:ClearInsight.Model" />
+        <type api="T:ClearInsight.Model.CIResponseCode" ref="false" />
+      </containers>
+    </api>
+    <api id="F:ClearInsight.Model.CIResponseCode.Unauthorized">
+      <apidata name="Unauthorized" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:ClearInsight.Model.CIResponseCode" ref="false" />
+      </returns>
+      <value>401</value>
       <containers>
         <library assembly="ClearInsight" module="ClearInsight" kind="DynamicallyLinkedLibrary" />
         <namespace api="N:ClearInsight.Model" />

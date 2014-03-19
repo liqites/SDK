@@ -8,7 +8,9 @@
   <topic id="M:ClearInsight.ClearInsightAPI.#ctor(System.String,System.String)" />
   <topic id="M:ClearInsight.ClearInsightAPI.Execute(RestSharp.RestRequest)" />
   <topic id="M:ClearInsight.ClearInsightAPI.Execute``1(RestSharp.RestRequest)" />
+  <topic id="M:ClearInsight.ClearInsightAPI.ExecuteAsync(RestSharp.RestRequest,System.Action{ClearInsight.Model.CIResponse})" />
   <topic id="M:ClearInsight.ClearInsightAPI.ImportKpiEntries(ClearInsight.Model.KpiEntry[])" />
+  <topic id="M:ClearInsight.ClearInsightAPI.ImportkpiEntriesAsync(ClearInsight.Model.KpiEntry[],System.Action{ClearInsight.Model.CIResponse})" />
   <topic id="M:ClearInsight.ClearInsightAPI.ImportKpiEntry(ClearInsight.Model.KpiEntry)" />
   <topic id="M:ClearInsight.ClearInsightAPI.TestSecret" />
   <topic id="N:ClearInsight.Model" />

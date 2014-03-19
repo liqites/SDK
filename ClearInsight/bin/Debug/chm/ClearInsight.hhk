@@ -139,8 +139,16 @@
         <param name="Local" value="html\O_T_ClearInsight_ClearInsightAPI_Execute.htm">
       </OBJECT><LI>
       <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="ClearInsightAPI.ExecuteAsync method">
+        <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_ExecuteAsync_2_7164dae0.htm">
+      </OBJECT><LI>
+      <LI><OBJECT type="text/sitemap">
         <param name="Name" value="ClearInsightAPI.ImportKpiEntries method">
         <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_ImportKpiEntries_1_e87e29ac.htm">
+      </OBJECT><LI>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="ClearInsightAPI.ImportkpiEntriesAsync method">
+        <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_ImportkpiEntriesAsync_2_d144f1fe.htm">
       </OBJECT><LI>
       <LI><OBJECT type="text/sitemap">
         <param name="Name" value="ClearInsightAPI.ImportKpiEntry method">
@@ -171,8 +179,16 @@
         <param name="Local" value="html\O_T_ClearInsight_ClearInsightAPI_Execute.htm">
       </OBJECT><LI>
       <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="ExecuteAsync method">
+        <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_ExecuteAsync_2_7164dae0.htm">
+      </OBJECT><LI>
+      <LI><OBJECT type="text/sitemap">
         <param name="Name" value="ImportKpiEntries method">
         <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_ImportKpiEntries_1_e87e29ac.htm">
+      </OBJECT><LI>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="ImportkpiEntriesAsync method">
+        <param name="Local" value="html\M_ClearInsight_ClearInsightAPI_ImportkpiEntriesAsync_2_d144f1fe.htm">
       </OBJECT><LI>
       <LI><OBJECT type="text/sitemap">
         <param name="Name" value="ImportKpiEntry method">
@@ -273,6 +289,10 @@
       <LI><OBJECT type="text/sitemap">
         <param name="Name" value="ToString method">
         <param name="Local" value="html\M_ClearInsight_Model_CIResponse_ToString.htm">
+      </OBJECT><LI>
+      <LI><OBJECT type="text/sitemap">
+        <param name="Name" value="Unauthorized enumeration member">
+        <param name="Local" value="html\T_ClearInsight_Model_CIResponseCode.htm">
       </OBJECT><LI>
       <LI><OBJECT type="text/sitemap">
         <param name="Name" value="validate method">
