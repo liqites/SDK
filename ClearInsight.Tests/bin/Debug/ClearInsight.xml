@@ -48,6 +48,14 @@
             <param name="request"></param>
             <param name="callback"></param>
         </member>
+        <member name="M:ClearInsight.ClearInsightAPI.ImportkpiEntriesAsync(ClearInsight.Model.KpiEntry[],System.Action{ClearInsight.Model.CIResponse})">
+            <summary>
+            function ImportkpiEntriesAsync
+            </summary>
+            <param name="entries">array kpientries</param>
+            <remarks>length of entries should not bigger than 500</remarks>
+            <param name="callback">callback(CIResponse)</param>
+        </member>
         <member name="M:ClearInsight.ClearInsightAPI.ImportKpiEntry(ClearInsight.Model.KpiEntry)">
             <summary>
             Upload one kpi
@@ -60,6 +68,7 @@
             Upload bulk kpientries
             </summary>
             <param name="entries">Array of ClearInsight.Model.KpiEntry</param>
+            <remarks>length of entries should not bigger than 500</remarks>
             <returns>CIResponse response</returns>
         </member>
         <member name="M:ClearInsight.ClearInsightAPI.TestSecret">

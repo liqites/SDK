@@ -93,6 +93,12 @@ namespace ClearInsight
             });
         }
 
+        /// <summary>
+        /// function ImportkpiEntriesAsync
+        /// </summary>
+        /// <param name="entries">array kpientries</param>
+        /// <remarks>length of entries should not bigger than 500</remarks>
+        /// <param name="callback">callback(CIResponse)</param>
         public void ImportkpiEntriesAsync(KpiEntry[] entries, Action<CIResponse> callback)
         {
             var request = new RestRequest(Method.POST);
@@ -133,12 +139,12 @@ namespace ClearInsight
         /// Upload bulk kpientries
         /// </summary>
         /// <param name="entries">Array of ClearInsight.Model.KpiEntry</param>
+        /// <remarks>length of entries should not bigger than 500</remarks>
         /// <returns>CIResponse response</returns>
         public CIResponse ImportKpiEntries(KpiEntry[] entries)
         {
             KpiEntryValidator validator = new KpiEntryValidator();
-            List<KpiEntry> lst = entries.OfType<KpiEntry>().ToList();
-            validator.validate(lst);
+            validator.validate(entries.OfType<KpiEntry>().ToList());
 
             var request = new RestRequest(Method.POST);
             request.Resource = "api/v1/kpi_entry/entries";
