@@ -8,3 +8,13 @@ D:\Develop\Projects\Github\ClearInsight\ClearInsight.Tests\obj\Debug\ClearInsigh
 D:\Develop\Projects\Github\ClearInsight\ClearInsight.Tests\obj\Debug\ClearInsight.Tests.pdb
 D:\Develop\Projects\Github\ClearInsight\ClearInsight.Tests\bin\Debug\ClearInsight.xml
 D:\Develop\Projects\Github\ClearInsight\ClearInsight.Tests\bin\Debug\ClearInsight.Tests.exe.config
+D:\Develop\Projects\Github\SDK\ClearInsight.Tests\bin\Debug\ClearInsight.Tests.exe.config
+D:\Develop\Projects\Github\SDK\ClearInsight.Tests\obj\Debug\ClearInsight.Tests.exe
+D:\Develop\Projects\Github\SDK\ClearInsight.Tests\obj\Debug\ClearInsight.Tests.pdb
+D:\Develop\Projects\Github\SDK\ClearInsight.Tests\bin\Debug\ClearInsight.Tests.exe
+D:\Develop\Projects\Github\SDK\ClearInsight.Tests\bin\Debug\ClearInsight.Tests.pdb
+D:\Develop\Projects\Github\SDK\ClearInsight.Tests\bin\Debug\ClearInsight.dll
+D:\Develop\Projects\Github\SDK\ClearInsight.Tests\bin\Debug\RestSharp.dll
+D:\Develop\Projects\Github\SDK\ClearInsight.Tests\bin\Debug\ClearInsight.pdb
+D:\Develop\Projects\Github\SDK\ClearInsight.Tests\bin\Debug\ClearInsight.xml
+D:\Develop\Projects\Github\SDK\ClearInsight.Tests\obj\Debug\ClearInsight.Tests.csprojResolveAssemblyReference.cache

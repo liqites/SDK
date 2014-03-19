@@ -66,14 +66,7 @@ namespace ClearInsight
             client.BaseUrl = _baseUrl;
             client.Authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator(_accessToken, "Bearer");
             IRestResponse response;
-            try
-            {
-                response = client.Execute(resquest);
-            }
-            catch (System.Exception)
-            {
-                throw;
-            }
+            response = client.Execute(resquest);
             return _processStatusCode(response);
         }
 
