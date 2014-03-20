@@ -24,7 +24,7 @@ a.  CIResponse response = api.ImportKpiEntries();
 // if batch = true ,all kpi entrie will rollback if error occurs
 b.  api.ImportKpiEntriesAsync();
 
-3.Full Example, full example please see https://github.com/shentianyi/SDK
+3.Full code, full examples please see https://github.com/shentianyi/SDK
 
 Async
 Console.WriteLine("Test Bulk KpiEntries Async");
@@ -62,4 +62,4 @@ CIResponse response = api.ImportKpiEntries(entries.ToArray());
 //
 Console.WriteLine(response.ToString());
 
-3. How to get access token,please read pdf "ApplyOAuth2.0AccessTokenV1.pdf"
+3. How to get access token,please read pdf "doc/ApplyOAuth2.0AccessTokenV1.pdf"
