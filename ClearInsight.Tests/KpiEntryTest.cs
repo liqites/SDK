@@ -98,12 +98,10 @@ namespace ClearInsight.Tests
             for (int i = 0; i < 100; i++)
             {
                 //
-                long tick = DateTime.Now.Ticks;
-                Random ran = new Random((int)(tick & 0xffffffffL) | (int)(tick >> 32)); 
                 //
                 KpiEntry entry = new KpiEntry();
                 entry.KpiID = "1";
-                entry.Value = ran;
+                entry.Value = "200";
                 entry.Date = time.AddDays(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
                 entries.Add(entry);

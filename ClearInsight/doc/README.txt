@@ -2,6 +2,10 @@ Getting Started
 
 .Net Framework 3.5 or higer is required.
 
+Production Environment:www.cz-tek.com:8000
+Test Environment:www.cz-tek.com:8082
+
+
 1.Add ClearInsight.dll and RestSharp.dll to your project
 
 2.Usage
@@ -19,7 +23,7 @@ a.  CIResponse response = api.ImportKpiEntries();
 // if batch = true ,all kpi entrie will rollback if error occurs
 b.  api.ImportKpiEntriesAsync();
 
-3.Full Example
+3.Full Example, full example please see https://github.com/shentianyi/SDK
 
 Async
 Console.WriteLine("Test Bulk KpiEntries Async");
