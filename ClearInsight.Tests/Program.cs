@@ -12,10 +12,10 @@ namespace ClearInsight.Tests
             Console.WriteLine("Start Test...");
             KpiEntryTest kpitest = new KpiEntryTest();
             //kpitest.TestImportsingleKpiEntry();
-            kpitest.TestImportbulkKpiEntries();
+            //kpitest.TestImportbulkKpiEntries();
             //kpitest.TestImportKpiEntryAsync();
             //kpitest.TestImportKpiEntriesAsync();
-            //kpitest.TestImportbulkKpiEntriesBatch();
+            kpitest.TestImportbulkKpiEntriesBatch();
             //kpitest.TestImportKpiEntriesAsyncBatch();
             Console.WriteLine("End Test...");
             Console.ReadLine();

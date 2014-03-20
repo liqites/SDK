@@ -12,7 +12,7 @@ namespace ClearInsight.Tests
         private ClearInsightAPI api;
         public KpiEntryTest()
         {
-            api = new ClearInsightAPI("http://192.168.1.105:3000", "3dcba17f596969a676bfdd90b5425c703f983acf7306760e1057c95afe9f17b1");
+            api = new ClearInsightAPI("http://www.cz-tek.com:8082", "ff41aa18ed82e56652890054544ac485f7fde4a19d2cb024a8f4de9c6550a263");
         }
 
         public void TestImportsingleKpiEntry()
@@ -40,7 +40,7 @@ namespace ClearInsight.Tests
             for (int i = 0; i < 500; i++)
             {
                 KpiEntry entry = new KpiEntry();
-                entry.KpiID = i.ToString();
+                entry.KpiID = "1";
                 entry.Value = (i+300).ToString();
                 entry.Date = time.AddDays(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
@@ -94,11 +94,16 @@ namespace ClearInsight.Tests
             //init kpientry
             List<KpiEntry> entries = new List<KpiEntry>();
             DateTime time = DateTime.Today;
+
             for (int i = 0; i < 100; i++)
             {
+                //
+                long tick = DateTime.Now.Ticks;
+                Random ran = new Random((int)(tick & 0xffffffffL) | (int)(tick >> 32)); 
+                //
                 KpiEntry entry = new KpiEntry();
-                entry.KpiID = i.ToString();
-                entry.Value = i.ToString() ;
+                entry.KpiID = "1";
+                entry.Value = ran;
                 entry.Date = time.AddDays(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
                 entries.Add(entry);
