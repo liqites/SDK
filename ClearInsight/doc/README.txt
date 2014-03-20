@@ -7,7 +7,7 @@ Getting Started
 2.Usage
 
 initialize a api
-ClearInsightAPI api = new ClearInsightAPI("www.cz-tek.com:8000","enter your access token here");
+ClearInsightAPI api = new ClearInsightAPI("https://www.cz-tek.com:8000","enter your access token here");
 
 we supply two api methods to upload your kpi
 
