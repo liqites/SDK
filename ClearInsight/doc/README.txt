@@ -11,11 +11,12 @@ ClearInsightAPI api = new ClearInsightAPI("www.cz-tek.com:8000","enter your acce
 
 we supply two api methods to upload your kpi
 
-// you can pass KpiEntry or KpiEntry[] as parameter
-//
+// you can pass KpiEntry or KpiEntry[],bool batch as parameter
+// if batch = true ,all kpi entrie will rollback if error occurs
 a.  CIResponse response = api.ImportKpiEntries();
 
-// you can pass KpiEntry or KpiEntry[] ,and callback Action<CIResponse>
+// you can pass KpiEntry or KpiEntry[] ,and callback Action<CIResponse>, bool batch
+// if batch = true ,all kpi entrie will rollback if error occurs
 b.  api.ImportKpiEntriesAsync();
 
 3.Full Example

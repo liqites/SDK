@@ -6,6 +6,7 @@ using ClearInsight.Model;
 using ClearInsight.Exception;
 using ClearInsight.Validation;
 using RestSharp;
+using RestSharp.Deserializers;
 using RestSharp.Serializers;
 namespace ClearInsight
 {
@@ -17,7 +18,7 @@ namespace ClearInsight
         /// <summary>
         /// Instalce Variable<c>_baseUrl</c> api base url
         /// </summary>
-        string _baseUrl = "192.168.1.108:3000";
+        string _baseUrl = "https://www.cz-tek.com:8000";
         /// <summary>
         /// Instance Variable<c>_accessToken</c> access Token
         /// </summary>
@@ -63,6 +64,7 @@ namespace ClearInsight
         public CIResponse Execute(RestRequest resquest)
         {
             var client = new RestClient();
+            client.AddHandler("application.json", new JsonDeserializer());
             client.BaseUrl = _baseUrl;
             client.Authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator(_accessToken, "Bearer");
             IRestResponse response;
@@ -78,6 +80,7 @@ namespace ClearInsight
         public void ExecuteAsync(RestRequest request,Action<CIResponse> callback)
         {
             var client = new RestClient();
+            client.AddHandler("application.json",new JsonDeserializer());
             client.BaseUrl = _baseUrl;
             client.Authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator(_accessToken, "Bearer");
             client.ExecuteAsync(request, response =>
@@ -115,7 +118,12 @@ namespace ClearInsight
         /// <param name="entries">array kpientries</param>
         /// <remarks>length of entries should not bigger than 500</remarks>
         /// <param name="callback">callback(CIResponse)</param>
-        public void ImportKpiEntriesAsync(KpiEntry[] entries, Action<CIResponse> callback)
+        /// <param name="batch">batch</param>
+        /// <remarks>
+        /// default false,if true,server will rollback all the kpi entries if one couse error.
+        /// if false,correct kpi entries will be insert into db and return the errors.
+        /// </remarks>
+        public void ImportKpiEntriesAsync(KpiEntry[] entries, Action<CIResponse> callback,bool batch = false)
         {
             if (entries.Length > (int)CIRequest.MAXKPIENTRYCOUNT)
             {
@@ -134,6 +142,7 @@ namespace ClearInsight
                 objs[i] = new { kpi_id = entries[i].KpiID, date = entries[i].Date, value = entries[i].Value, email = entries[i].Email };
             }
             request.AddParameter("entries", request.JsonSerializer.Serialize(objs));
+            request.AddParameter("in_batch", batch);
             ExecuteAsync(request,callback);
         }
 
@@ -149,6 +158,7 @@ namespace ClearInsight
             lst.Add(entry);
             validator.validate(lst);
             var request = new RestRequest(Method.POST);
+
             request.Resource = "api/v1/kpi_entry/entry";
 
             request.AddParameter("email", entry.Email);
@@ -165,7 +175,12 @@ namespace ClearInsight
         /// <param name="entries">Array of ClearInsight.Model.KpiEntry</param>
         /// <remarks>length of entries should not bigger than 500</remarks>
         /// <returns>CIResponse response</returns>
-        public CIResponse ImportKpiEntries(KpiEntry[] entries)
+        /// <param name="batch">batch</param>
+        /// <remarks>
+        /// default false,if true,server will rollback all the kpi entries if one couse error.
+        /// if false,correct kpi entries will be insert into db and return the errors.
+        /// </remarks>
+        public CIResponse ImportKpiEntries(KpiEntry[] entries,bool batch = false)
         {
             if (entries.Length > (int)CIRequest.MAXKPIENTRYCOUNT)
             {
@@ -183,6 +198,7 @@ namespace ClearInsight
                 objs[i] = new { kpi_id = entries[i].KpiID, date = entries[i].Date, value = entries[i].Value, email = entries[i].Email };
             }
             request.AddParameter("entries", request.JsonSerializer.Serialize(objs));
+            request.AddParameter("in_batch", batch);
             return Execute(request);
         }
 
