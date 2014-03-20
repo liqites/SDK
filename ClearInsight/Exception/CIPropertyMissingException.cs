@@ -6,7 +6,7 @@ using System.Text;
 namespace ClearInsight.Exception
 {
     /// <summary>
-    /// Exception <c>CIPropertyMissingException</c>
+    /// Class <c>CIPropertyMissingException</c>
     /// </summary>
     class CIPropertyMissingException : ClearInsightException
     {

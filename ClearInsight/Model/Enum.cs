@@ -20,4 +20,17 @@ namespace ClearInsight.Model
         /// </summary>
         ArgumentError=422,
     }
+
+    /// <summary>
+    /// Enum <c>CIRequest</c>
+    /// Request enum defines here
+    /// </summary>
+    public enum CIRequest
+    {
+        /// <summary>
+        /// member <c>MAXKPIENTRYCOUNT</c>
+        /// <remarks>define the max kpientry count</remarks>
+        /// </summary>
+        MAXKPIENTRYCOUNT = 500,
+    }
 }

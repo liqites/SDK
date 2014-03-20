@@ -87,13 +87,41 @@ namespace ClearInsight
         }
 
         /// <summary>
+        /// Function <c>ImportkpiEntriesAsync</c>
+        /// </summary>
+        /// <param name="entry">KpiEntry</param>
+        /// <param name="callback">Callback</param>
+        public void ImportKpiEntriesAsync(KpiEntry entry, Action<CIResponse> callback)
+        {
+            KpiEntryValidator validator = new KpiEntryValidator();
+            List<KpiEntry> lst = new List<KpiEntry>();
+            lst.Add(entry);
+            validator.validate(lst);
+
+            var request = new RestRequest(Method.POST);
+            request.Resource = "api/v1/kpi_entry/entry";
+
+            request.AddParameter("email", entry.Email);
+            request.AddParameter("kpi_id", entry.KpiID);
+            request.AddParameter("date", entry.Date);
+            request.AddParameter("value", entry.Value);
+
+            ExecuteAsync(request, callback);
+        }
+
+        /// <summary>
         /// function ImportkpiEntriesAsync
         /// </summary>
         /// <param name="entries">array kpientries</param>
         /// <remarks>length of entries should not bigger than 500</remarks>
         /// <param name="callback">callback(CIResponse)</param>
-        public void ImportkpiEntriesAsync(KpiEntry[] entries, Action<CIResponse> callback)
+        public void ImportKpiEntriesAsync(KpiEntry[] entries, Action<CIResponse> callback)
         {
+            if (entries.Length > (int)CIRequest.MAXKPIENTRYCOUNT)
+            {
+                throw new CIRequestTooLong("Maximum count of kpi entries is" + CIRequest.MAXKPIENTRYCOUNT);
+            }
+
             KpiEntryValidator validator = new KpiEntryValidator();
             validator.validate(entries.OfType<KpiEntry>().ToList());
 
@@ -114,7 +142,7 @@ namespace ClearInsight
         /// </summary>
         /// <param name="entry">ClearInsight.Model.KpiEntry</param>
         /// <returns>CIResponse response</returns>
-        public CIResponse ImportKpiEntry(KpiEntry entry) 
+        public CIResponse ImportKpiEntries(KpiEntry entry) 
         {
             KpiEntryValidator validator = new KpiEntryValidator();
             List<KpiEntry> lst = new List<KpiEntry>();
@@ -139,6 +167,10 @@ namespace ClearInsight
         /// <returns>CIResponse response</returns>
         public CIResponse ImportKpiEntries(KpiEntry[] entries)
         {
+            if (entries.Length > (int)CIRequest.MAXKPIENTRYCOUNT)
+            {
+                throw new CIRequestTooLong("Maximum count of kpi entries is"+CIRequest.MAXKPIENTRYCOUNT);
+            }
             KpiEntryValidator validator = new KpiEntryValidator();
             validator.validate(entries.OfType<KpiEntry>().ToList());
 

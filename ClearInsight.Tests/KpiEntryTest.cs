@@ -25,7 +25,7 @@ namespace ClearInsight.Tests
             entry.Date = "2014-3-20";
             entry.Email = "C-RBA_User@leoni.com";
             //call api
-            CIResponse response = api.ImportKpiEntry(entry);
+            CIResponse response = api.ImportKpiEntries(entry);
             //
             Console.WriteLine(response.ToString());
         }
@@ -67,7 +67,7 @@ namespace ClearInsight.Tests
                 entries.Add(entry);
             }
             //cal api
-            api.ImportkpiEntriesAsync(entries.ToArray(), res => { Console.WriteLine(res.ToString());});
+            api.ImportKpiEntriesAsync(entries.ToArray(), res => { Console.WriteLine(res.ToString()); });
             //
         }
     }

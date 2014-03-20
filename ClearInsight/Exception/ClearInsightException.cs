@@ -6,7 +6,7 @@ using System.Text;
 namespace ClearInsight.Exception
 {
     /// <summary>
-    /// Exception <c>ClearInsightException</c>
+    /// Class <c>ClearInsightException</c>
     /// Base ClearInsight Exception
     /// </summary>
     [Serializable]
