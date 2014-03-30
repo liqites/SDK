@@ -4,8 +4,6 @@ Getting Started
 
 Production Environment:www.cz-tek.com:8000
 Test Environment:www.cz-tek.com:8082
-Accounts please see doc/Account.txt
-
 
 1.Add ClearInsight.dll and RestSharp.dll to your project
 
