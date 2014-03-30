@@ -45,9 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClearInsightAPI.cs" />
-    <Compile Include="Exception\CIArgumentErrorException.cs" />
-    <Compile Include="Exception\CIPropertyMissingException.cs" />
-    <Compile Include="Exception\CIRequestTooLong.cs" />
+    <Compile Include="Exception\CiArgumentErrorException.cs" />
+    <Compile Include="Exception\CiPropertyMissingException.cs" />
+    <Compile Include="Exception\CiRequestTooLong.cs" />
     <Compile Include="Exception\ClearInsightException.cs" />
     <Compile Include="Model\CIResponse.cs" />
     <Compile Include="Model\Enum.cs" />
