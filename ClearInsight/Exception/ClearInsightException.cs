@@ -37,5 +37,13 @@ namespace ClearInsight.Exception
         {
             
         }
+
+        /// <summary>
+        /// ClearInsigheException
+        /// </summary>
+        /// <param name="info">System.Runtime.Serialization.SerializationInfo</param>
+        /// <param name="context">System.Runtime.Serialization.StreamingContext</param>
+        protected ClearInsightException(System.Runtime.Serialization.SerializationInfo info,System.Runtime.Serialization.StreamingContext context)
+        { }
     }
 }

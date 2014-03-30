@@ -127,7 +127,7 @@ namespace ClearInsight
         {
             if (entries.Length > (int)CIRequest.MAXKPIENTRYCOUNT)
             {
-                throw new CIRequestTooLong("Maximum count of kpi entries is" + CIRequest.MAXKPIENTRYCOUNT);
+                throw new CiRequestTooLong("Maximum count of kpi entries is" + CIRequest.MAXKPIENTRYCOUNT);
             }
 
             KpiEntryValidator validator = new KpiEntryValidator();
@@ -184,7 +184,7 @@ namespace ClearInsight
         {
             if (entries.Length > (int)CIRequest.MAXKPIENTRYCOUNT)
             {
-                throw new CIRequestTooLong("Maximum count of kpi entries is"+CIRequest.MAXKPIENTRYCOUNT);
+                throw new CiRequestTooLong("Maximum count of kpi entries is"+CIRequest.MAXKPIENTRYCOUNT);
             }
             KpiEntryValidator validator = new KpiEntryValidator();
             validator.validate(entries.OfType<KpiEntry>().ToList());
@@ -230,7 +230,7 @@ namespace ClearInsight
             switch (statusCode)
             {
                 case (int)CIResponseCode.ArgumentError:
-                    throw new CIArgumentErrorException(res.Content);
+                    throw new CiArgumentErrorException(res.Content);
                 default:
                     break;
             }

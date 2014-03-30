@@ -9,13 +9,19 @@ namespace ClearInsight.Exception
     /// Class<c>CIArgumentErrorException</c>
     /// Argument Error Exception
     /// </summary>
-    class CIArgumentErrorException : ClearInsightException
+    class CiArgumentErrorException : ClearInsightException
     {
         /// <summary>
         /// CIArgumentErrorException
         /// </summary>
+        public CiArgumentErrorException()
+        { }
+
+        /// <summary>
+        /// CIArgumentErrorException
+        /// </summary>
         /// <param name="message">Error message</param>
-        public CIArgumentErrorException(string message)
+        public CiArgumentErrorException(string message) : base(message)
         { }
 
         /// <summary>
@@ -23,9 +29,18 @@ namespace ClearInsight.Exception
         /// </summary>
         /// <param name="message">Error Message</param>
         /// <param name="innerException">System Exception</param>
-        public CIArgumentErrorException(string message, System.Exception innerException)
+        public CiArgumentErrorException(string message, System.Exception innerException) 
+            :base (message,innerException)
         {
             
         }
+
+        /// <summary>
+        /// CIArgumentErrorException
+        /// </summary>
+        /// <param name="info">System.Runtime.Serialization.SerializationInfo</param>
+        /// <param name="context">System.Runtime.Serialization.StreamingContext</param>
+        protected CiArgumentErrorException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+        { }
     }
 }

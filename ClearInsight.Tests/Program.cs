@@ -15,8 +15,18 @@ namespace ClearInsight.Tests
             //kpitest.TestImportbulkKpiEntries();
             //kpitest.TestImportKpiEntryAsync();
             //kpitest.TestImportKpiEntriesAsync();
-            kpitest.TestImportbulkKpiEntriesBatch();
+            //kpitest.TestImportbulkKpiEntriesBatch();
             //kpitest.TestImportKpiEntriesAsyncBatch();
+            try
+            {
+                kpitest.TestErrorMessage();
+
+            }
+            catch (System.Exception e)
+            {
+                Console.WriteLine(e.Message);
+                throw;
+            }
             Console.WriteLine("End Test...");
             Console.ReadLine();
         }
