@@ -9,13 +9,19 @@ namespace ClearInsight.Exception
     /// Class <c>CIRequestTooLong</c>
     /// throw then http request too long
     /// </summary>
-    class CIRequestTooLong : ClearInsightException
+    class CiRequestTooLong : ClearInsightException
     {
+        /// <summary>
+        /// CiRequestTooLong
+        /// </summary>
+        public CiRequestTooLong()
+        { }
+
         /// <summary>
         /// constructor<c>CIRequestTooLong</c>
         /// </summary>
         /// <param name="message">Error Message</param>
-        public CIRequestTooLong(string message)
+        public CiRequestTooLong(string message):base(message)
         { }
 
         /// <summary>
@@ -23,7 +29,16 @@ namespace ClearInsight.Exception
         /// </summary>
         /// <param name="message">Error Message</param>
         /// <param name="innerException">System.Exception</param>
-        public CIRequestTooLong(string message,System.Exception innerException)
+        public CiRequestTooLong(string message,System.Exception innerException)
+            :base(message,innerException)
+        { }
+
+        /// <summary>
+        /// CiRequestTooLong
+        /// </summary>
+        /// <param name="info">System.Runtime.Serialization.SerializationInfo</param>
+        /// <param name="context">System.Runtime.Serialization.StreamingContext</param>
+        protected CiRequestTooLong(System.Runtime.Serialization.SerializationInfo info,System.Runtime.Serialization.StreamingContext context)
         { }
     }
 }

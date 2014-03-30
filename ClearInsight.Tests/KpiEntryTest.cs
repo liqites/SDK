@@ -12,7 +12,7 @@ namespace ClearInsight.Tests
         private ClearInsightAPI api;
         public KpiEntryTest()
         {
-            api = new ClearInsightAPI("http://www.cz-tek.com:8082", "ff41aa18ed82e56652890054544ac485f7fde4a19d2cb024a8f4de9c6550a263");
+            api = new ClearInsightAPI("https://www.cz-tek.com:8082", "75d01f648f80b01ca975d4ec8b00acf72cca8be60156e96e5fcc7c534cc1fcb4");
         }
 
         public void TestImportsingleKpiEntry()
@@ -122,7 +122,7 @@ namespace ClearInsight.Tests
             {
                 KpiEntry entry = new KpiEntry();
                 entry.KpiID = "1";
-                entry.Value = "200";
+                entry.Value = "100";
                 entry.Date = time.AddDays(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
                 entries.Add(entry);
@@ -130,6 +130,19 @@ namespace ClearInsight.Tests
             //cal api
             api.ImportKpiEntriesAsync(entries.ToArray(), res => { Console.WriteLine(res.ToString()); },true);
             //
+        }
+
+        public void TestErrorMessage()
+        {
+            Console.WriteLine("Test Error Message!");
+            //init kpiEntry
+            KpiEntry entry = new KpiEntry();
+            entry.KpiID = "1";
+            entry.Value = "155";
+            entry.Date = DateTime.Today.ToString();
+            entry.Email = "C_RBA_User@leoni.com";
+            CIResponse res = api.ImportKpiEntries(entry);
+            Console.WriteLine("Error Message:"+res.ToString());
         }
     }
 }

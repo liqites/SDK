@@ -8,13 +8,18 @@ namespace ClearInsight.Exception
     /// <summary>
     /// Class <c>CIPropertyMissingException</c>
     /// </summary>
-    class CIPropertyMissingException : ClearInsightException
+    class CiPropertyMissingException : ClearInsightException
     {
+        /// <summary>
+        /// CiPropertyMissingException
+        /// </summary>
+        public CiPropertyMissingException()
+        { }
         /// <summary>
         /// CIPropertyMissingException
         /// </summary>
         /// <param name="message">Error Message</param>
-        public CIPropertyMissingException(string message)
+        public CiPropertyMissingException(string message) :base(message)
         { }
 
         /// <summary>
@@ -22,7 +27,16 @@ namespace ClearInsight.Exception
         /// </summary>
         /// <param name="message">Error Message</param>
         /// <param name="innerException">System Exception</param>
-        public CIPropertyMissingException(string message,System.Exception innerException)
+        public CiPropertyMissingException(string message,System.Exception innerException)
+            :base(message,innerException)
+        { }
+
+        /// <summary>
+        /// CiPropertyMissingException
+        /// </summary>
+        /// <param name="info">System.Runtime.Serialization.SerializationInfo</param>
+        /// <param name="context">System.Runtime.Serialization.StreamingContext</param>
+        protected CiPropertyMissingException(System.Runtime.Serialization.SerializationInfo info,System.Runtime.Serialization.StreamingContext context)
         { }
     }
 }

@@ -28,7 +28,7 @@ namespace ClearInsight.Validation
             {
                 if (!IsIntegral(entry))
                 {
-                    throw new CIPropertyMissingException("Property Missing,please set all the property!");
+                    throw new CiPropertyMissingException("Property Missing,please set all the property!");
                 }
             }
         }
