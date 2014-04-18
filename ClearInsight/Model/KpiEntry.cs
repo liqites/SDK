@@ -38,5 +38,12 @@ namespace ClearInsight.Model
         /// <remarks>should not be empty,should be UTC Time.Time if KpiEntry</remarks>
         /// </summary>
         public string Date { get; set; }
+
+        /// <summary>
+        /// Property <c>EntryType<c>
+        /// entry_type for kpi entry,if not set,it will be 0
+        /// <remarks></remarks>
+        /// <summary>
+        public int KpiEntry {get; set;}
     }
 }
