@@ -44,6 +44,20 @@ namespace ClearInsight.Model
         /// entry_type for kpi entry,if not set,it will be 0
         /// <remarks></remarks>
         /// <summary>
-        public int KpiEntry {get; set;}
+        public int EntryType {get; set;}
+
+        /// <summary>
+        /// Property<c>Attribute</c>
+        /// properties of kpi entry
+        /// </summary>
+        public KpiProperty[] Attributes { get; set; }
+
+        /// <summary>
+        /// Functi
+        /// </summary>
+        public ToHash()
+        {
+            
+        }
     }
 }
