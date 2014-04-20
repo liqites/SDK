@@ -12,7 +12,7 @@ namespace ClearInsight.Tests
         private ClearInsightAPI api;
         public KpiEntryTest()
         {
-            api = new ClearInsightAPI("https://www.cz-tek.com:8082", "75d01f648f80b01ca975d4ec8b00acf72cca8be60156e96e5fcc7c534cc1fcb4");
+            api = new ClearInsightAPI("192.168.1.102:3000", "d81945dc9d455542fef65b36b3704befa08ea8911a5e5056a0b505a021635e31");
         }
 
         public void TestImportsingleKpiEntry()

@@ -197,7 +197,8 @@ namespace ClearInsight
             {
                 objs[i] = new { kpi_id = entries[i].KpiID, date = entries[i].Date, value = entries[i].Value, email = entries[i].Email };
             }
-            request.AddParameter("entries", request.JsonSerializer.Serialize(objs));
+            var temp = request.JsonSerializer.Serialize(objs);
+            request.AddParameter("entries", temp);
             request.AddParameter("in_batch", batch);
             return Execute(request);
         }
