@@ -13,8 +13,8 @@ namespace ClearInsight.Tests
             KpiEntryTest kpitest = new KpiEntryTest();
             try
             {
-                //kpitest.TestErrorMessage();
-                kpitest.TestImportsingleKpiEntry();
+                kpitest.TestErrorMessage();
+                //kpitest.TestImportsingleKpiEntry();
                 //kpitest.TestImportbulkKpiEntries();
                 //kpitest.TestImportKpiEntryAsync();
                 //kpitest.TestImportKpiEntriesAsync();

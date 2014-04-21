@@ -7,6 +7,10 @@ using Newtonsoft.Json.Linq;
 
 namespace ClearInsight.Model
 {
+    /// <summary>
+    /// Class<c>KpiProperty</c>
+    /// Model for Kpi Property
+    /// </summary>
     public class KpiProperty
     {
         /// <summary>
@@ -24,9 +28,10 @@ namespace ClearInsight.Model
         public string Value { get; set; }
 
         /// <summary>
-        /// 
+        /// Function<c>toJson</c>
+        /// get json string
         /// </summary>
-        /// <returns></returns>
+        /// <returns>string</returns>
         public string toJson()
         {
             JObject o = new JObject();

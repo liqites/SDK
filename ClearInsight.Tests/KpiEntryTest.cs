@@ -21,10 +21,10 @@ namespace ClearInsight.Tests
             //init kpientry
             KpiEntry entry = new KpiEntry();
             entry.KpiID = "1";
-            entry.Value = "200";
-            entry.Date = "2014-4-21 10:00:00";
+            entry.Value = "100";
+            entry.Date = "2014-4-21";
             entry.Email = "C-RBA_User@leoni.com";
-            entry.EntryType = "0";
+            entry.EntryType = "1";
             //property
             KpiProperty property = new KpiProperty();
             property.Name = "test";
@@ -44,13 +44,21 @@ namespace ClearInsight.Tests
             List<KpiEntry> entries = new List<KpiEntry>();
             DateTime time = DateTime.Today;
             Console.WriteLine(DateTime.Now);
-            for (int i = 0; i < 500; i++)
+
+            //property
+            KpiProperty property = new KpiProperty();
+            property.Name = "test";
+            property.Value = "100";
+
+            for (int i = 0; i < 5; i++)
             {
                 KpiEntry entry = new KpiEntry();
                 entry.KpiID = "1";
                 entry.Value = (i+300).ToString();
-                entry.Date = time.AddDays(i).ToString();
+                entry.Date = time.AddMinutes(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
+                entry.EntryType = "0";
+                entry.Attributes.Add(property);
                 entries.Add(entry);
             }
             //cal api
@@ -69,6 +77,13 @@ namespace ClearInsight.Tests
             entry.Value = "200";
             entry.Date = "2014-3-20";
             entry.Email = "C-RBA_User@leoni.com";
+            entry.EntryType = "1";
+            //property
+            KpiProperty property = new KpiProperty();
+            property.Name = "test";
+            property.Value = "100";
+            //add attribute
+            entry.Attributes.Add(property);
             //cal api
             api.ImportKpiEntriesAsync(entry, res => { Console.WriteLine(res.ToString()); });
             //
@@ -80,6 +95,10 @@ namespace ClearInsight.Tests
             //init kpientry
             List<KpiEntry> entries = new List<KpiEntry>();
             DateTime time = DateTime.Today;
+            //property
+            KpiProperty property = new KpiProperty();
+            property.Name = "test";
+            property.Value = "100";
             for (int i = 0; i < 100; i++)
             {
                 KpiEntry entry = new KpiEntry();
@@ -87,6 +106,8 @@ namespace ClearInsight.Tests
                 entry.Value = "200";
                 entry.Date = time.AddDays(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
+                entry.EntryType = "1";
+                entry.Attributes.Add(property);
                 entries.Add(entry);
             }
             //cal api
@@ -105,12 +126,18 @@ namespace ClearInsight.Tests
             for (int i = 0; i < 100; i++)
             {
                 //
-                //
                 KpiEntry entry = new KpiEntry();
                 entry.KpiID = "1";
                 entry.Value = "200";
                 entry.Date = time.AddDays(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
+                entry.EntryType = "1";
+                //property
+                KpiProperty property = new KpiProperty();
+                property.Name = "test";
+                property.Value = "100";
+                //add attribute
+                entry.Attributes.Add(property);
                 entries.Add(entry);
             }
             //cal api
@@ -125,6 +152,10 @@ namespace ClearInsight.Tests
             //init kpientry
             List<KpiEntry> entries = new List<KpiEntry>();
             DateTime time = DateTime.Today;
+            //property
+            KpiProperty property = new KpiProperty();
+            property.Name = "test";
+            property.Value = "100";
             for (int i = 0; i < 100; i++)
             {
                 KpiEntry entry = new KpiEntry();
@@ -132,6 +163,9 @@ namespace ClearInsight.Tests
                 entry.Value = "100";
                 entry.Date = time.AddDays(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
+                entry.EntryType = "1";
+                //add attribute
+                entry.Attributes.Add(property);
                 entries.Add(entry);
             }
             //cal api
@@ -147,7 +181,14 @@ namespace ClearInsight.Tests
             entry.KpiID = "1";
             entry.Value = "155";
             entry.Date = DateTime.Today.ToString();
-            entry.Email = "C_RBA_User@leoni.com";
+            entry.Email = "C-RBA_User@leoni.com";
+            entry.EntryType = "1";
+            //property
+            KpiProperty property = new KpiProperty();
+            property.Name = "test";
+            property.Value = "100";
+            //
+            entry.Attributes.Add(property);
             CIResponse res = api.ImportKpiEntries(entry);
             Console.WriteLine("Error Message:"+res.ToString());
         }

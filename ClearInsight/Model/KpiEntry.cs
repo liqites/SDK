@@ -51,7 +51,9 @@ namespace ClearInsight.Model
         /// <summary>
         /// Property <c>EntryType<c>
         /// entry_type for kpi entry,if not set,it will be 0
-        /// <remarks></remarks>
+        /// <remarks>0 should be the Kpi Entry detail,1 should be the Kpi Entry,
+        /// you can't change the KpiEntry value with EntryType 1 if it has  Kpi Entry details
+        /// </remarks>
         /// <summary>
         public string EntryType {get; set;}
 
@@ -62,7 +64,7 @@ namespace ClearInsight.Model
         public IList<KpiProperty> Attributes { get; set; }
 
         /// <summary>
-        /// function<c>toJson</c>
+        /// Function<c>toJson</c>
         /// </summary>
         /// <returns><c>string</c></returns>
         public string toJson()
@@ -70,6 +72,11 @@ namespace ClearInsight.Model
             return toJsonObject().ToString();
         }
 
+        /// <summary>
+        /// Function<c>toJsonObject</c>
+        /// return JObject
+        /// </summary>
+        /// <returns>JObject</returns>
         public JObject toJsonObject()
         {
             JObject o = new JObject();
@@ -79,6 +86,7 @@ namespace ClearInsight.Model
             o["date"] = this.Date;
             o["value"] = this.Value;
             o["email"] = this.Email;
+            o["entry_type"] = this.EntryType;
 
             foreach (var property in this.Attributes)
             {
