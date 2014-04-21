@@ -11,16 +11,15 @@ namespace ClearInsight.Tests
         {
             Console.WriteLine("Start Test...");
             KpiEntryTest kpitest = new KpiEntryTest();
-            //kpitest.TestImportsingleKpiEntry();
-            kpitest.TestImportbulkKpiEntries();
-            //kpitest.TestImportKpiEntryAsync();
-            //kpitest.TestImportKpiEntriesAsync();
-            //kpitest.TestImportbulkKpiEntriesBatch();
-            //kpitest.TestImportKpiEntriesAsyncBatch();
             try
             {
-                kpitest.TestErrorMessage();
-
+                //kpitest.TestErrorMessage();
+                kpitest.TestImportsingleKpiEntry();
+                //kpitest.TestImportbulkKpiEntries();
+                //kpitest.TestImportKpiEntryAsync();
+                //kpitest.TestImportKpiEntriesAsync();
+                //kpitest.TestImportbulkKpiEntriesBatch();
+                //kpitest.TestImportKpiEntriesAsyncBatch();
             }
             catch (System.Exception e)
             {

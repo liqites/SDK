@@ -12,7 +12,7 @@ namespace ClearInsight.Tests
         private ClearInsightAPI api;
         public KpiEntryTest()
         {
-            api = new ClearInsightAPI("192.168.1.102:3000", "d81945dc9d455542fef65b36b3704befa08ea8911a5e5056a0b505a021635e31");
+            api = new ClearInsightAPI("http://192.168.1.110:3000", "b55f8917386eb9c1e6e0ec9165318b848033f28878869f0a31d5e05f95c099ef");
         }
 
         public void TestImportsingleKpiEntry()
@@ -22,8 +22,15 @@ namespace ClearInsight.Tests
             KpiEntry entry = new KpiEntry();
             entry.KpiID = "1";
             entry.Value = "200";
-            entry.Date = "2014-3-20";
+            entry.Date = "2014-4-21 10:00:00";
             entry.Email = "C-RBA_User@leoni.com";
+            entry.EntryType = "0";
+            //property
+            KpiProperty property = new KpiProperty();
+            property.Name = "test";
+            property.Value = "100";
+            //add attribute
+            entry.Attributes.Add(property);
             //call api
             CIResponse response = api.ImportKpiEntries(entry);
             //

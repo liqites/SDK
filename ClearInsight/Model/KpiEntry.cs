@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace ClearInsight.Model
 {
@@ -11,6 +12,14 @@ namespace ClearInsight.Model
     /// </summary>
     public class KpiEntry
     {
+        /// <summary>
+        /// constructor<c>KpiEntry()</c>
+        /// </summary>
+        public KpiEntry()
+        {
+            this.EntryType = "1";
+            this.Attributes = new List<KpiProperty>();
+        }
         /// <summary>
         /// Property <c>KpiID</c>
         /// id of kpi
@@ -44,21 +53,40 @@ namespace ClearInsight.Model
         /// entry_type for kpi entry,if not set,it will be 0
         /// <remarks></remarks>
         /// <summary>
-        public int EntryType {get; set;}
+        public string EntryType {get; set;}
 
         /// <summary>
         /// Property<c>Attribute</c>
         /// properties of kpi entry
         /// </summary>
-        //public KpiProperty[] Attributes { get; set; }
+        public IList<KpiProperty> Attributes { get; set; }
 
         /// <summary>
-        /// Functi
+        /// function<c>toJson</c>
         /// </summary>
-        //public object ToHash(){
-        //    var obj = new object();
-        //    var kpi_properties = new {};
-            
-        //}
+        /// <returns><c>string</c></returns>
+        public string toJson()
+        {
+            return toJsonObject().ToString();
+        }
+
+        public JObject toJsonObject()
+        {
+            JObject o = new JObject();
+            JObject o2 = new JObject();
+
+            o["kpi_id"] = this.KpiID;
+            o["date"] = this.Date;
+            o["value"] = this.Value;
+            o["email"] = this.Email;
+
+            foreach (var property in this.Attributes)
+            {
+                o2[property.Name] = property.Value;
+            }
+            o["kpi_properties"] = o2;
+
+            return o;
+        }
     }
 }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace ClearInsight.Model
 {
@@ -20,5 +22,16 @@ namespace ClearInsight.Model
         /// <remarks></remarks>
         /// </summary>
         public string Value { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public string toJson()
+        {
+            JObject o = new JObject();
+            o[this.Name] = this.Value;
+            return o.ToString();
+        }
     }
 }

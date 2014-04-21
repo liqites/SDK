@@ -5,9 +5,12 @@ using System.Text;
 using ClearInsight.Model;
 using ClearInsight.Exception;
 using ClearInsight.Validation;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 using RestSharp.Deserializers;
 using RestSharp.Serializers;
+using Newtonsoft.Json;
+
 namespace ClearInsight
 {
     /// <summary>
@@ -104,10 +107,11 @@ namespace ClearInsight
             var request = new RestRequest(Method.POST);
             request.Resource = "api/v1/kpi_entry/entry";
 
-            request.AddParameter("email", entry.Email);
-            request.AddParameter("kpi_id", entry.KpiID);
-            request.AddParameter("date", entry.Date);
-            request.AddParameter("value", entry.Value);
+            //request.AddParameter("email", entry.Email);
+            //request.AddParameter("kpi_id", entry.KpiID);
+            //request.AddParameter("date", entry.Date);
+            //request.AddParameter("value", entry.Value);
+            request.AddParameter("entry", entry.toJson());
 
             ExecuteAsync(request, callback);
         }
@@ -136,12 +140,20 @@ namespace ClearInsight
             var request = new RestRequest(Method.POST);
             request.Resource = "api/v1/kpi_entry/entries";
             request.RequestFormat = DataFormat.Json;
-            object[] objs = new object[entries.Length];
+            
+            /*object[] objs = new object[entries.Length];
             for (int i = 0; i < entries.Length; i++)
             {
                 objs[i] = new { kpi_id = entries[i].KpiID, date = entries[i].Date, value = entries[i].Value, email = entries[i].Email };
+            }*/
+
+            JArray array = new JArray();
+            for (int i = 0; i < entries.Length; i++)
+            {
+                array.Add(entries[i].toJsonObject());
             }
-            request.AddParameter("entries", request.JsonSerializer.Serialize(objs));
+            //
+            request.AddParameter("entries", array.ToString());
             request.AddParameter("in_batch", batch);
             ExecuteAsync(request,callback);
         }
@@ -161,10 +173,11 @@ namespace ClearInsight
 
             request.Resource = "api/v1/kpi_entry/entry";
 
-            request.AddParameter("email", entry.Email);
-            request.AddParameter("kpi_id", entry.KpiID);
-            request.AddParameter("date", entry.Date);
-            request.AddParameter("value", entry.Value);
+            //request.AddParameter("email", entry.Email);
+            //request.AddParameter("kpi_id", entry.KpiID);
+            //request.AddParameter("date", entry.Date);
+            //request.AddParameter("value", entry.Value);
+            request.AddParameter("entry", entry.toJson());
 
             return Execute(request);
         }
@@ -193,11 +206,17 @@ namespace ClearInsight
             request.Resource = "api/v1/kpi_entry/entries";
             request.RequestFormat = DataFormat.Json;
             object[] objs = new object[entries.Length];
-            for (int i = 0; i < entries.Length; i++)
+            /*for (int i = 0; i < entries.Length; i++)
             {
                 objs[i] = new { kpi_id = entries[i].KpiID, date = entries[i].Date, value = entries[i].Value, email = entries[i].Email };
+            }*/
+            JArray array = new JArray();
+            for (int i = 0; i < entries.Length; i++)
+            {
+                array.Add(entries[i].toJsonObject());
             }
-            var temp = request.JsonSerializer.Serialize(objs);
+
+            string temp = array.ToString();//request.JsonSerializer.Serialize(objs);
             request.AddParameter("entries", temp);
             request.AddParameter("in_batch", batch);
             return Execute(request);
