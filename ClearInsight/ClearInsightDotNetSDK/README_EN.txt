@@ -5,7 +5,7 @@ Getting Started
 Production Environment:www.cz-tek.com:8000
 Test Environment:www.cz-tek.com:8082
 
-1.Add ClearInsight.dll and RestSharp.dll to your project
+1.Add ClearInsight.dll ,RestSharp.dll and Newtonsoft.Json.dll to your project
 
 2.Usage
 
@@ -36,6 +36,10 @@ for (int i = 0; i < 100; i++)
 	entry.Value = "200";
         entry.Date = time.AddDays(i).ToString();
         entry.Email = "C-RBA_User@leoni.com";
+	KpiProperty property = new KpiProperty();
+	property.Name = "CustomerType";
+	property.Valye = "VIP";
+	entry.Attributes.Add(property);
         entries.Add(entry);
 }
 //cal api
@@ -53,6 +57,10 @@ for (int i = 0; i < 100; i++)
         entry.Value = "200";
         entry.Date = time.AddDays(i).ToString();
         entry.Email = "C-RBA_User@leoni.com";
+	KpiProperty property = new KpiProperty();
+	property.Name = "CustomerType";
+	property.Valye = "VIP";
+	entry.Attributes.Add(property);
         entries.Add(entry);
 }
 //cal api

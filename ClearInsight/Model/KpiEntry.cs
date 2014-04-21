@@ -51,9 +51,7 @@ namespace ClearInsight.Model
         /// <summary>
         /// Property <c>EntryType<c>
         /// entry_type for kpi entry,if not set,it will be 0
-        /// <remarks>0 should be the Kpi Entry detail,1 should be the Kpi Entry,
-        /// you can't change the KpiEntry value with EntryType 1 if it has  Kpi Entry details
-        /// </remarks>
+        /// <remarks>0 should be the Kpi Entry detail,1 should be the Kpi Entry,you can't change the KpiEntry value with EntryType 1 if it has  Kpi Entry details</remarks>
         /// <summary>
         public string EntryType {get; set;}
 

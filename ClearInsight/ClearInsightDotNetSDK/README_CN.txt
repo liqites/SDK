@@ -5,7 +5,7 @@
 开发环境:www.cz-tek.com:8000
 测试环境:www.cz-tek.com:8082
 
-1.添加 ClearInsight.dll 和 RestSharp.dll 到你的项目中
+1.添加 ClearInsight.dll , RestSharp.dll 和 Newtonsoft.Json.dll 到你的项目中
 
 2.如何使用
 
@@ -38,6 +38,10 @@ for (int i = 0; i < 100; i++)
 	entry.Value = "200";
         entry.Date = time.AddDays(i).ToString();
         entry.Email = "C-RBA_User@leoni.com";
+	KpiProperty property = new KpiProperty();
+	property.Name = "客户类型";
+	property.Valye = "重要客户";
+	entry.Attributes.Add(property);
         entries.Add(entry);
 }
 //调用api
@@ -55,6 +59,10 @@ for (int i = 0; i < 100; i++)
         entry.Value = "200";
         entry.Date = time.AddDays(i).ToString();
         entry.Email = "C-RBA_User@leoni.com";
+	KpiProperty property = new KpiProperty();
+	property.Name = "客户类型";
+	property.Valye = "重要客户";
+	entry.Attributes.Add(property);
         entries.Add(entry);
 }
 //调用api
