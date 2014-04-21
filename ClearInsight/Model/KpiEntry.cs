@@ -50,14 +50,15 @@ namespace ClearInsight.Model
         /// Property<c>Attribute</c>
         /// properties of kpi entry
         /// </summary>
-        public KpiProperty[] Attributes { get; set; }
+        //public KpiProperty[] Attributes { get; set; }
 
         /// <summary>
         /// Functi
         /// </summary>
-        public ToHash()
-        {
+        //public object ToHash(){
+        //    var obj = new object();
+        //    var kpi_properties = new {};
             
-        }
+        //}
     }
 }
