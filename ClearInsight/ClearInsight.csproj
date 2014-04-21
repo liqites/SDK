@@ -52,6 +52,7 @@
     <Compile Include="Model\CIResponse.cs" />
     <Compile Include="Model\Enum.cs" />
     <Compile Include="Model\KpiEntry.cs" />
+    <Compile Include="Model\KpiProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validation\KpiEntryValidator.cs" />
   </ItemGroup>
