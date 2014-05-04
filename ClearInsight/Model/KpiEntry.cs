@@ -17,7 +17,7 @@ namespace ClearInsight.Model
         /// </summary>
         public KpiEntry()
         {
-            this.EntryType = "1";
+            //this.EntryType = "1";
             this.Attributes = new List<KpiProperty>();
         }
         /// <summary>
@@ -53,7 +53,7 @@ namespace ClearInsight.Model
         /// entry_type for kpi entry,if not set,it will be 0
         /// <remarks>0 should be the Kpi Entry detail,1 should be the Kpi Entry,you can't change the KpiEntry value with EntryType 1 if it has  Kpi Entry details</remarks>
         /// <summary>
-        public string EntryType {get; set;}
+        //public string EntryType {get; set;}
 
         /// <summary>
         /// Property<c>Attribute</c>
@@ -84,7 +84,7 @@ namespace ClearInsight.Model
             o["date"] = this.Date;
             o["value"] = this.Value;
             o["email"] = this.Email;
-            o["entry_type"] = this.EntryType;
+            //o["entry_type"] = this.EntryType;
 
             foreach (var property in this.Attributes)
             {

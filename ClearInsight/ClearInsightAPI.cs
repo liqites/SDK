@@ -72,6 +72,7 @@ namespace ClearInsight
             client.Authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator(_accessToken, "Bearer");
             IRestResponse response;
             response = client.Execute(resquest);
+            
             return _processStatusCode(response);
         }
 
@@ -177,6 +178,7 @@ namespace ClearInsight
             //request.AddParameter("kpi_id", entry.KpiID);
             //request.AddParameter("date", entry.Date);
             //request.AddParameter("value", entry.Value);
+            //Console.WriteLine(entry.toJson());
             request.AddParameter("entry", entry.toJson());
 
             return Execute(request);

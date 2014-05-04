@@ -12,7 +12,7 @@ namespace ClearInsight.Tests
         private ClearInsightAPI api;
         public KpiEntryTest()
         {
-            api = new ClearInsightAPI("http://192.168.1.110:3000", "b55f8917386eb9c1e6e0ec9165318b848033f28878869f0a31d5e05f95c099ef");
+            api = new ClearInsightAPI("http://192.168.1.112:3000", "75d01f648f80b01ca975d4ec8b00acf72cca8be60156e96e5fcc7c534cc1fcb4");
         }
 
         public void TestImportsingleKpiEntry()
@@ -22,13 +22,13 @@ namespace ClearInsight.Tests
             KpiEntry entry = new KpiEntry();
             entry.KpiID = "1";
             entry.Value = "100";
-            entry.Date = "2014-4-21";
+            entry.Date = "2014-5-5";
             entry.Email = "C-RBA_User@leoni.com";
-            entry.EntryType = "1";
+            //entry.EntryType = "1";
             //property
             KpiProperty property = new KpiProperty();
-            property.Name = "test";
-            property.Value = "100";
+            property.Name = "SEX";
+            property.Value = "MAN";
             //add attribute
             entry.Attributes.Add(property);
             //call api
@@ -47,17 +47,17 @@ namespace ClearInsight.Tests
 
             //property
             KpiProperty property = new KpiProperty();
-            property.Name = "test";
-            property.Value = "100";
+            property.Name = "SEX"; 
 
             for (int i = 0; i < 5; i++)
             {
+                property.Value =i%2==0 ? "MAN" : "WOMAN";
                 KpiEntry entry = new KpiEntry();
                 entry.KpiID = "1";
                 entry.Value = (i+300).ToString();
                 entry.Date = time.AddMinutes(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
-                entry.EntryType = "0";
+                //entry.EntryType = "0";
                 entry.Attributes.Add(property);
                 entries.Add(entry);
             }
@@ -77,7 +77,7 @@ namespace ClearInsight.Tests
             entry.Value = "200";
             entry.Date = "2014-3-20";
             entry.Email = "C-RBA_User@leoni.com";
-            entry.EntryType = "1";
+            //entry.EntryType = "1";
             //property
             KpiProperty property = new KpiProperty();
             property.Name = "test";
@@ -106,7 +106,7 @@ namespace ClearInsight.Tests
                 entry.Value = "200";
                 entry.Date = time.AddDays(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
-                entry.EntryType = "1";
+                //entry.EntryType = "1";
                 entry.Attributes.Add(property);
                 entries.Add(entry);
             }
@@ -131,7 +131,7 @@ namespace ClearInsight.Tests
                 entry.Value = "200";
                 entry.Date = time.AddDays(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
-                entry.EntryType = "1";
+                //entry.EntryType = "1";
                 //property
                 KpiProperty property = new KpiProperty();
                 property.Name = "test";
@@ -163,7 +163,7 @@ namespace ClearInsight.Tests
                 entry.Value = "100";
                 entry.Date = time.AddDays(i).ToString();
                 entry.Email = "C-RBA_User@leoni.com";
-                entry.EntryType = "1";
+                //entry.EntryType = "1";
                 //add attribute
                 entry.Attributes.Add(property);
                 entries.Add(entry);
@@ -182,7 +182,7 @@ namespace ClearInsight.Tests
             entry.Value = "155";
             entry.Date = DateTime.Today.ToString();
             entry.Email = "C-RBA_User@leoni.com";
-            entry.EntryType = "1";
+            //entry.EntryType = "1";
             //property
             KpiProperty property = new KpiProperty();
             property.Name = "test";
